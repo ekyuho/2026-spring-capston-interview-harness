@@ -200,7 +200,7 @@ NLP (Natural Language Processing) ACL, NAACL, EMNLP
 
 ### 설영은
 
-- **질문당 한줄씩 5개의 질문**: 1. 멀티모달 도메인 적응을 통한 성능 개선을 달성하기 위해, 어떤 도메인이 가장 효과적인 타겟 도메인으로 간주될 수 있는가?
+1. 멀티모달 도메인 적응을 통한 성능 개선을 달성하기 위해, 어떤 도메인이 가장 효과적인 타겟 도메인으로 간주될 수 있는가?
 2. 특정 도메인에 대한 적응을 통해 성능을 향상시킬 경우, 기존에 잘 작동하던 일반 도메인에서의 성능이 저하되는 generalization degradation 문제는 어느 정도로 중요한가?
 3. Prompt Tuning과 관련해서 train-time마다 학습하는 방식, test-time에서 샘플마다 적응하는 방식, 동적으로 관리하고 재사용하는 방식 등 다양한 방식이 있다. 이 중 어떤 방식이 성능, 안정성, 계산 비용 측면에서 가장 효과적이라고 생각하는가?
 4. Prompt Tuning에서 효과적인 prompt는 어떻게 구성되어야 하는가?
@@ -208,7 +208,7 @@ NLP (Natural Language Processing) ACL, NAACL, EMNLP
 
 ### 신지민
 
-- **질문당 한줄씩 5개의 질문**: 1. Vision-Language Model의 zero-shot 성능은 왜 실제 환경에서의 domain shift 에 대해 구조적으로 취약한가?
+1. Vision-Language Model의 zero-shot 성능은 왜 실제 환경에서의 domain shift 에 대해 구조적으로 취약한가?
 2. 기존 멀티모달 도메인 적응 방법들은 왜 cross-domain 일반화 성능 향상에 있어 비효율적이며, 그 한계는 어디에서 발생하는가?
 3. Test-time Prompt Tuning은 domain shift로 인한 성능 저하를 일반적으로 극복할 수 있는가, 아니면 특정 유형의 domain shift에서만 제한적으로 작동하는가?
 4. Test-time Prompt Tuning의 효과를 검증하기 위해, domain shift를 체계적으로 반영하면서도 train과 test 간의 일반화 성능을 신뢰성 있게 평가할 수 있는 데이터셋은 어떻게 설계하고 수집할 수 있는가?
@@ -216,7 +216,7 @@ NLP (Natural Language Processing) ACL, NAACL, EMNLP
 
 ### 윤희서
 
-- **질문당 한줄씩 5개의 질문**: 1. 서로 다른 modality(예: 이미지, 텍스트) 간 정보량과 신뢰도가 다를 때, 현재 모델들은 어떤 한계를 보이는가?
+1. 서로 다른 modality(예: 이미지, 텍스트) 간 정보량과 신뢰도가 다를 때, 현재 모델들은 어떤 한계를 보이는가?
 2. modality 간 alignment를 강화하는 과정이 오히려 새로운 도메인에서의 일반화 성능을 저해하는 경우가 있는가, 그 원인은 무엇인가?
 3. early fusion, late fusion, hybrid fusion 방식 각각이 어떤 상황에서 성능 저하를 보이는가?
 4. 멀티모달 학습에서 modality 간 데이터가 불완전하거나 missing된 경우, source 도메인에서 학습된 multimodal representation은 얼마나 견고하게 유지되는가?
