@@ -207,21 +207,24 @@ AI 투명성 리포트 (텍스트로 간단히 정리):
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: 1. AI/ML: 소비 패턴 분석 및 예측 모델 (PyTorch)
-2. Data Analysis: Pandas, NumPy 기반 소비 데이터 처리 및 시계열 분석
-3. NLP: 자연어 입력 조건 분석 및 인사이트 생성 (OpenAI API)
-4. Recommendation: 사용자 소비 패턴 기반 하이브리드 추천 시스템
-5. FE: Kotlin (Android Native), Retrofit
-6. BE: FastAPI
-7. DB: MySQL
-- **url**: https://www.python.org/downloads/
-https://developer.android.com/studio
-https://kotlinlang.org/docs/home.html
-https://fastapi.tiangolo.com/
-https://dev.mysql.com/downloads/
-https://www.docker.com/get-started/
-https://docs.github.com/en/actions
-https://platform.openai.com/docs/
+env:
+  - 1. AI/ML: 소비 패턴 분석 및 예측 모델 (PyTorch)
+  - 2. Data Analysis: Pandas, NumPy 기반 소비 데이터 처리 및 시계열 분석
+  - 3. NLP: 자연어 입력 조건 분석 및 인사이트 생성 (OpenAI API)
+  - 4. Recommendation: 사용자 소비 패턴 기반 하이브리드 추천 시스템
+  - 5. FE: Kotlin (Android Native), Retrofit
+  - 6. BE: FastAPI
+  - 7. DB: MySQL
+
+url:
+  - https://www.python.org/downloads/
+  - https://developer.android.com/studio
+  - https://kotlinlang.org/docs/home.html
+  - https://fastapi.tiangolo.com/
+  - https://dev.mysql.com/downloads/
+  - https://www.docker.com/get-started/
+  - https://docs.github.com/en/actions
+  - https://platform.openai.com/docs/
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

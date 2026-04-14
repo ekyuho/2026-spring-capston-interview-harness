@@ -124,33 +124,36 @@ AI  OpenAI API ( 텍스트  요약  및  키워드  추출 )
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: Client 디바이스:Pc(windows)
-프론트엔드
-React.js
-사용자 입력 중심 UI/UX 설계 (질문·답변 입력, 인사이트 탐색)
-상태 관리 (Zustand 또는 Context API)
-반응형 웹 UI 구현
-🔹백엔드
-Spring Boot (Java)
-RESTful API 설계 및 데이터 처리
-사용자 인증 및 권한 관리 (Spring Security + JWT)
-스케줄링 기반 리마인드 기능 구현
-🔹 데이터베이스
-MySQL / PostgreSQL
-사용자 질문, 답변, 인사이트 데이터 저장
-카테고리 및 태그 기반 데이터 구조 관리
-🔹 AI 및 데이터 처리
-OpenAI API (LLM)
-질문·답변 기반 핵심 요약 생성
-키워드 추출 및 인사이트 도출
-텍스트 임베딩 (Embedding) 기반 유사도 분석
-인사이트 간 의미적 유사성 계산
-관련 인사이트 추천 기능 구현
-- **url**: React.js: https://react.dev/learn/installation  
-Spring Boot: https://docs.spring.io/spring-boot/installing.html
-MySQL: https://www.mysql.com/downloads/  
-PostgreSQL: https://www.postgresql.org/download/  
-OpenAI API: https://developers.openai.com/api/docs/quickstart/
+env:
+  - Client 디바이스:Pc(windows)
+  - 프론트엔드
+  - React.js
+  - 사용자 입력 중심 UI/UX 설계 (질문·답변 입력, 인사이트 탐색)
+  - 상태 관리 (Zustand 또는 Context API)
+  - 반응형 웹 UI 구현
+  - 🔹백엔드
+  - Spring Boot (Java)
+  - RESTful API 설계 및 데이터 처리
+  - 사용자 인증 및 권한 관리 (Spring Security + JWT)
+  - 스케줄링 기반 리마인드 기능 구현
+  - 🔹 데이터베이스
+  - MySQL / PostgreSQL
+  - 사용자 질문, 답변, 인사이트 데이터 저장
+  - 카테고리 및 태그 기반 데이터 구조 관리
+  - 🔹 AI 및 데이터 처리
+  - OpenAI API (LLM)
+  - 질문·답변 기반 핵심 요약 생성
+  - 키워드 추출 및 인사이트 도출
+  - 텍스트 임베딩 (Embedding) 기반 유사도 분석
+  - 인사이트 간 의미적 유사성 계산
+  - 관련 인사이트 추천 기능 구현
+
+url:
+  - https://react.dev/learn/installation
+  - https://docs.spring.io/spring-boot/installing.html
+  - https://www.mysql.com/downloads/
+  - https://www.postgresql.org/download/
+  - https://developers.openai.com/api/docs/quickstart/
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

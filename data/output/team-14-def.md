@@ -132,29 +132,25 @@ AI 모델의 다양한 활용 및 구조 연구, 제한된 하드웨어 자원(C
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: 1. Client 디바이스
-
-- PC (macOS): 연구 대상이 Mac mini이므로 실험과 구동 모두 Mac 환경에서 진행
-
-2. FE 
-
-- Streamlit : 파이썬 기반으로 대시보드를 빠르게 만들 수 있어, 실시간 자원 사용량 그래프(CPU, GPU, RAM)를 시각화
-
-3. 특별한 라이브러리
-
-- MLX : Apple Silicon GPU/NPU를 최대한 활용하기 위한 애플의 공식 딥러닝 프레임워크
-
-- LangChain : Agent의 의사결정 루프를 설계
-
-6. API Call 서비스
-- 해당 없음
-- Local LLM (Llama 3, Ollama)의 활용. 외부 API(OpenAI 등)를 쓰면 '로컬 워크로드 최적화'라는 연구 취지에 어긋남. 로컬에 모델을 띄우고 호출함.
-- **url**: https://www.python.org/downloads/ (Python 환경 구축)
-https://ollama.com/download (로컬 LLM 구동 엔진)
-https://code.visualstudio.com/ (메인 IDE)
-https://www.docker.com/products/docker-desktop/ (DB 및 모니터링 툴 설치용)
-https://developer.apple.com/xcode/ (Apple Silicon 성능 분석 도구 포함)
-https://github.com/ml-explore/mlx (Apple ML 프레임워크 라이브러리)
+env:
+  - 1. Client 디바이스
+  - - PC (macOS): 연구 대상이 Mac mini이므로 실험과 구동 모두 Mac 환경에서 진행
+  - 2. FE
+  - - Streamlit : 파이썬 기반으로 대시보드를 빠르게 만들 수 있어, 실시간 자원 사용량 그래프(CPU, GPU, RAM)를 시각화
+  - 3. 특별한 라이브러리
+  - - MLX : Apple Silicon GPU/NPU를 최대한 활용하기 위한 애플의 공식 딥러닝 프레임워크
+  - - LangChain : Agent의 의사결정 루프를 설계
+  - 6. API Call 서비스
+  - - 해당 없음
+  - - Local LLM (Llama 3, Ollama)의 활용. 외부 API(OpenAI 등)를 쓰면 '로컬 워크로드 최적화'라는 연구 취지에 어긋남. 로컬에 모델을 띄우고 호출함.
+
+url:
+  - https://www.python.org/downloads/ (Python 환경 구축)
+  - https://ollama.com/download (로컬 LLM 구동 엔진)
+  - https://code.visualstudio.com/ (메인 IDE)
+  - https://www.docker.com/products/docker-desktop/ (DB 및 모니터링 툴 설치용)
+  - https://developer.apple.com/xcode/ (Apple Silicon 성능 분석 도구 포함)
+  - https://github.com/ml-explore/mlx (Apple ML 프레임워크 라이브러리)
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

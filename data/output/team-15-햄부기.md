@@ -215,26 +215,29 @@ Vision 모델의 정확도(accuracy)와 지연 시간(latency) 사이의 trade-o
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: 1. Client 디바이스 — PC (Windows) + Jetson AGX Orin (엣지 디바이스)
-2. FE — 없음
-3. BE — 없음
-4. DB — 없음 (실험 결과는 TensorBoard로 시각화)
-5. 특별한 라이브러리
-- PyTorch (모델 학습 및 가지치기)
-- Hugging Face Transformers (ViT 모델 로드)
-- torch.ao (2:4 Sparsity 적용)
-- TensorRT (Jetson 추론 최적화)
-- ONNX (모델 변환)
-- TensorBoard (실험 결과 시각화)
-6. API Call 서비스 — 없음
-- **url**: Python - https://www.python.org
-PyTorch - https://pytorch.org
-Hugging Face - https://huggingface.co
-TensorRT - https://developer.nvidia.com/tensorrt
-JetPack SDK - https://developer.nvidia.com/jetpack
-ONNX - https://onnx.ai
-Conda - https://docs.conda.io
-VS Code - https://code.visualstudio.com
+env:
+  - 1. Client 디바이스 — PC (Windows) + Jetson AGX Orin (엣지 디바이스)
+  - 2. FE — 없음
+  - 3. BE — 없음
+  - 4. DB — 없음 (실험 결과는 TensorBoard로 시각화)
+  - 5. 특별한 라이브러리
+  - - PyTorch (모델 학습 및 가지치기)
+  - - Hugging Face Transformers (ViT 모델 로드)
+  - - torch.ao (2:4 Sparsity 적용)
+  - - TensorRT (Jetson 추론 최적화)
+  - - ONNX (모델 변환)
+  - - TensorBoard (실험 결과 시각화)
+  - 6. API Call 서비스 — 없음
+
+url:
+  - https://www.python.org
+  - https://pytorch.org
+  - https://huggingface.co
+  - https://developer.nvidia.com/tensorrt
+  - https://developer.nvidia.com/jetpack
+  - https://onnx.ai
+  - https://docs.conda.io
+  - https://code.visualstudio.com
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

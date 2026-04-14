@@ -102,26 +102,29 @@
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: 1. Client 디바이스 - PC
-2. FE - React(javascript), websocket client, recharts
-3. BE - FastAPI
-4. DB - PostgreSQL
-5. (BE) - pandas/numpy, scikit-learn, pytorch, statsmodels (Streaming) - websocket (알람) - SMTP/Slack API/Firebase 
-6. Binance API, OpenAI
-- **url**: https://nodejs.org/
-https://react.dev/
-https://code.visualstudio.com/
-https://www.python.org/
-https://fastapi.tiangolo.com/
-https://www.postgresql.org/download/
-https://www.docker.com/products/docker-desktop/
-https://git-scm.com/
-https://pytorch.org/get-started/locally/
-https://scikit-learn.org/stable/install.html
-https://numpy.org/install/
-https://pandas.pydata.org/docs/getting_started/install.html
-https://www.statsmodels.org/stable/install.html
-https://www.tensorflow.org/install (optional)
+env:
+  - 1. Client 디바이스 - PC
+  - 2. FE - React(javascript), websocket client, recharts
+  - 3. BE - FastAPI
+  - 4. DB - PostgreSQL
+  - 5. (BE) - pandas/numpy, scikit-learn, pytorch, statsmodels (Streaming) - websocket (알람) - SMTP/Slack API/Firebase
+  - 6. Binance API, OpenAI
+
+url:
+  - https://nodejs.org/
+  - https://react.dev/
+  - https://code.visualstudio.com/
+  - https://www.python.org/
+  - https://fastapi.tiangolo.com/
+  - https://www.postgresql.org/download/
+  - https://www.docker.com/products/docker-desktop/
+  - https://git-scm.com/
+  - https://pytorch.org/get-started/locally/
+  - https://scikit-learn.org/stable/install.html
+  - https://numpy.org/install/
+  - https://pandas.pydata.org/docs/getting_started/install.html
+  - https://www.statsmodels.org/stable/install.html
+  - https://www.tensorflow.org/install (optional)
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

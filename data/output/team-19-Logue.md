@@ -1376,94 +1376,90 @@ SQL을 작성하기 어려울 때 보통 어떻게 해결하시나요?
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: Device : PC(Window)
-FE
-- Next.js
-- Typescript
-- Vite
-- yarn
-- Axios
-- Tailwindcss v4.2
-- StoryBook
-- Zustand
-- Tanstack Query
-- React Hook form + Zod
-- shadcn/ui (ui  컴포넌트)
-- ECharts
-- Monaco Editor(필요시)
-- Vercel or Jenkins
-
-BE
-- Java 21, Spring Boot 3
-- Spring AOP
-- PostgreSQL
-- AWS RDS
-- AWS S3
-- Redis
-- Flyway
-- Github Actions
-- Docker
-- Kubernetes
-- AWS ec2, Route53, ALB
-- AWS CloudWatch
-- Sentry
-- Slf4j, Logback
-- Spring Security
-- OAuth2.0
-- JWT
-- Swagger
-- k6, p6spy
-
-AI
-- Python
-- FastAPI
-- Pydantic v2
-- pandas
-- sentence-transformers
-- OpenAI API
-- Uvicorn
-- pytest
-- Render
-- GitHub Actions
-- **url**: 1. FE
-[Next.js by Vercel - The React Framework](https://nextjs.org/)
-[Enable JavaScript to use search](https://www.google.com/search?q=vite&oq=vite&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYOzIGCAQQRRg9MgYIBRBFGEEyBggGEEUYQTIGCAcQRRhB0gEIMTAwN2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
-[Home page | Yarn](https://yarnpkg.com/)
-[시작하기 | Axios Docs](https://axios-http.com/kr/docs/intro)
-[Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.](https://tailwindcss.com/)
-[Storybook: Frontend workshop for UI development](https://storybook.js.org/)
-[Zustand](https://zustand-demo.pmnd.rs/)
-[TanStack Query](https://tanstack.com/query/latest)
-[Vercel: Build and deploy the best web experiences with the Frontend Cloud](https://vercel.com/)
-[Jenkins](https://www.jenkins.io/)
-
-2. BE
-https://spring.io/projects/spring-boot
-https://www.postgresql.org/download/
-https://redis.io/download/
-https://flywaydb.org/download
-https://docs.docker.com/get-docker/
-https://kubernetes.io/docs/tasks/tools/
-https://aws.amazon.com/cli/
-https://docs.sentry.io/product/sentry-basics/integrate-backend/
-http://www.slf4j.org/download.html
-https://logback.qos.ch/download.html
-https://spring.io/projects/spring-security
-https://swagger.io/tools/swagger-ui/download/
-https://grafana.com/docs/k6/latest/set-up/install-k6/
-https://github.com/p6spy/p6spy
-
-3. AI
-https://www.python.org/downloads/
-https://fastapi.tiangolo.com/
-https://docs.pydantic.dev/latest/
-https://pandas.pydata.org/docs/
-https://www.sbert.net/
-https://platform.openai.com/docs/api-reference
-https://www.uvicorn.org/
-https://docs.pytest.org/
-https://render.com/
-https://docs.github.com/actions
+env:
+  - Device : PC(Window)
+  - FE
+  - - Next.js
+  - - Typescript
+  - - Vite
+  - - yarn
+  - - Axios
+  - - Tailwindcss v4.2
+  - - StoryBook
+  - - Zustand
+  - - Tanstack Query
+  - - React Hook form + Zod
+  - - shadcn/ui (ui  컴포넌트)
+  - - ECharts
+  - - Monaco Editor(필요시)
+  - - Vercel or Jenkins
+  - BE
+  - - Java 21, Spring Boot 3
+  - - Spring AOP
+  - - PostgreSQL
+  - - AWS RDS
+  - - AWS S3
+  - - Redis
+  - - Flyway
+  - - Github Actions
+  - - Docker
+  - - Kubernetes
+  - - AWS ec2, Route53, ALB
+  - - AWS CloudWatch
+  - - Sentry
+  - - Slf4j, Logback
+  - - Spring Security
+  - - OAuth2.0
+  - - JWT
+  - - Swagger
+  - - k6, p6spy
+  - AI
+  - - Python
+  - - FastAPI
+  - - Pydantic v2
+  - - pandas
+  - - sentence-transformers
+  - - OpenAI API
+  - - Uvicorn
+  - - pytest
+  - - Render
+  - - GitHub Actions
+
+url:
+  - https://nextjs.org/)
+  - https://www.google.com/search?q=vite&oq=vite&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYOzIGCAQQRRg9MgYIBRBFGEEyBggGEEUYQTIGCAcQRRhB0gEIMTAwN2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
+  - https://yarnpkg.com/)
+  - https://axios-http.com/kr/docs/intro)
+  - https://tailwindcss.com/)
+  - https://storybook.js.org/)
+  - https://zustand-demo.pmnd.rs/)
+  - https://tanstack.com/query/latest)
+  - https://vercel.com/)
+  - https://www.jenkins.io/)
+  - https://spring.io/projects/spring-boot
+  - https://www.postgresql.org/download/
+  - https://redis.io/download/
+  - https://flywaydb.org/download
+  - https://docs.docker.com/get-docker/
+  - https://kubernetes.io/docs/tasks/tools/
+  - https://aws.amazon.com/cli/
+  - https://docs.sentry.io/product/sentry-basics/integrate-backend/
+  - http://www.slf4j.org/download.html
+  - https://logback.qos.ch/download.html
+  - https://spring.io/projects/spring-security
+  - https://swagger.io/tools/swagger-ui/download/
+  - https://grafana.com/docs/k6/latest/set-up/install-k6/
+  - https://github.com/p6spy/p6spy
+  - https://www.python.org/downloads/
+  - https://fastapi.tiangolo.com/
+  - https://docs.pydantic.dev/latest/
+  - https://pandas.pydata.org/docs/
+  - https://www.sbert.net/
+  - https://platform.openai.com/docs/api-reference
+  - https://www.uvicorn.org/
+  - https://docs.pytest.org/
+  - https://render.com/
+  - https://docs.github.com/actions
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

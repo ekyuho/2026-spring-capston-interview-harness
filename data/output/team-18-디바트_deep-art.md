@@ -137,53 +137,33 @@ https://www.youtube.com/watch?v=W11yT3gcyq8
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: <대략의 개발환경 구성요소>
-
-1. client 디바이스
-- 전시 기획자용: PC 웹 (Windows)
-- 관람객용: 모바일 웹 (Android)
-
-2. FE: React + TypeScript
-
-3. BE: FastAPI
-
-4. DB: PostgreSQL
-
-5. FE또는 BE에 사용하는 특별한 라이브러리
-- Axios
-- Howler.js
-- Pillow(이미지 전처리)
-
-6. API Call로 사용할 서비스
-- OpenAI
-- Google Cloud TTS
-- **url**: * FE: React + TypeScript
-https://nodejs.org/en
-https://react.dev/learn
-https://www.typescriptlang.org/
-
-* BE: FastAPI
-https://fastapi.tiangolo.com/
-
-* DB: PostgreSQL
-https://www.postgresql.org/
-
-* FE또는 BE에 사용하는 특별한 라이브러리
-- Axios
-https://axios-http.com/
-
-- Howler.js
-https://howlerjs.com/
-
-- Pillow(이미지 전처리)
-https://pillow.readthedocs.io/
-
-* API Call로 사용할 서비스
-- OpenAI
-https://platform.openai.com/
-
-- Google Cloud TTS
-https://cloud.google.com/text-to-speech
+env:
+  - <대략의 개발환경 구성요소>
+  - 1. client 디바이스
+  - - 전시 기획자용: PC 웹 (Windows)
+  - - 관람객용: 모바일 웹 (Android)
+  - 2. FE: React + TypeScript
+  - 3. BE: FastAPI
+  - 4. DB: PostgreSQL
+  - 5. FE또는 BE에 사용하는 특별한 라이브러리
+  - - Axios
+  - - Howler.js
+  - - Pillow(이미지 전처리)
+  - 6. API Call로 사용할 서비스
+  - - OpenAI
+  - - Google Cloud TTS
+
+url:
+  - https://nodejs.org/en
+  - https://react.dev/learn
+  - https://www.typescriptlang.org/
+  - https://fastapi.tiangolo.com/
+  - https://www.postgresql.org/
+  - https://axios-http.com/
+  - https://howlerjs.com/
+  - https://pillow.readthedocs.io/
+  - https://platform.openai.com/
+  - https://cloud.google.com/text-to-speech
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

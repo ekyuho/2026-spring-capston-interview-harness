@@ -156,26 +156,29 @@ AI 를  게임에  알맞게  반영하기  위한  방안을  재고해보고 ,
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: 1. Client 디바이스: PC (Windows, Mac)
-2. FE: Unity, Blender, Clip studio
-3. BE: 초기에는 Standalone 형태로 개발 후, 필요 시 FastAPI 기반 서버 연동 예정
-4. DB: 초기에는 로컬 데이터 저장 방식을 고려하고 있으며, 필요 시 MySQL 도입 예정
-5. 특별한 라이브러리: Unity URP/2D Light, TextMeshPro, JsonUtility, Custom Render Feature, Shader Graph, Post Processing, Cinemachine
-6. API Call 서비스:  로컬 LLM 또는 자체 호스팅 모델 검토 중
-- **url**: 1. https://www.microsoft.com/windows 
-https://www.apple.com/macos
-2. https://unity.com/download
-3. https://www.python.org/downloads/ 
-https://fastapi.tiangolo.com/
-4. https://www.mysql.com/downloads/
-5. https://docs.unity3d.com/Manual/com.unity.textmeshpro.html
-https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest
-https://docs.unity3d.com/Packages/com.unity.cinemachine@latest
-https://docs.unity3d.com/Manual/JSONSerialization.html
-https://docs.unity3d.com/Manual/PostProcessingOverview.html
-6. https://www.python.org/downloads/
-https://pytorch.org/
-https://huggingface.co/models
+env:
+  - 1. Client 디바이스: PC (Windows, Mac)
+  - 2. FE: Unity, Blender, Clip studio
+  - 3. BE: 초기에는 Standalone 형태로 개발 후, 필요 시 FastAPI 기반 서버 연동 예정
+  - 4. DB: 초기에는 로컬 데이터 저장 방식을 고려하고 있으며, 필요 시 MySQL 도입 예정
+  - 5. 특별한 라이브러리: Unity URP/2D Light, TextMeshPro, JsonUtility, Custom Render Feature, Shader Graph, Post Processing, Cinemachine
+  - 6. API Call 서비스:  로컬 LLM 또는 자체 호스팅 모델 검토 중
+
+url:
+  - https://www.microsoft.com/windows
+  - https://www.apple.com/macos
+  - https://unity.com/download
+  - https://www.python.org/downloads/
+  - https://fastapi.tiangolo.com/
+  - https://www.mysql.com/downloads/
+  - https://docs.unity3d.com/Manual/com.unity.textmeshpro.html
+  - https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest
+  - https://docs.unity3d.com/Packages/com.unity.cinemachine@latest
+  - https://docs.unity3d.com/Manual/JSONSerialization.html
+  - https://docs.unity3d.com/Manual/PostProcessingOverview.html
+  - https://www.python.org/downloads/
+  - https://pytorch.org/
+  - https://huggingface.co/models
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

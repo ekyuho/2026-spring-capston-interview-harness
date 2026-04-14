@@ -104,40 +104,39 @@
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: 1. 클라이언트 및 플랫폼 (Client & Platform)
-Target: 웹 브라우저 기반 (Multi-Device 지원)
-환경: 데스크톱/노트북(Windows, Mac, Linux) 및 모바일 브라우저 최적화
-특이사항: 별도의 네이티브 앱(iOS/Android)이나 엔진(Unity/Unreal)을 사용하지 않는 Web-Standard 방식 채택
-
-2. 프론트엔드 (Front-end)
-Framework: Vue 3 (Composition API)
-Build Tool: Vite (고속 번들링 및 개발 서버)
-Key Libraries:
-1. UI/Design: Vuestic UI, Element Plus, Tailwind CSS
-2. Visualization: vis-network (온톨로지 그래프 시각화 핵심)
-3. Content: marked, github-markdown-css (문서 렌더링)
-4. Communication: axios, vue-router
-
-3. 백엔드 (Back-end)
-Language: Python 3.x
-Framework: FastAPI (고성능 비동기 API 프레임워크)
-Server: Uvicorn (ASGI)
-Key Libraries: 
-1. Core: Pydantic (데이터 검증), python-dotenv (환경 변수 관리) 
-2. Async: FastAPI CORS Middleware, Threading (LLM 작업 병렬 처리)
-
-4. 데이터 관리 (Data Management)
-Storage Strategy: File System Based Storage (No-DB Architecture)
-
-5. 외부 서비스 및 AI 모델 (External API & AI)
-Main LLM: OpenAI API (GPT-5 계열 모델)
-- **url**: https://www.python.org/downloads/ (Python 3.10+ 언어 환경)
-https://code.visualstudio.com/ (VS Code 코드 에디터)
-https://www.docker.com/products/docker-desktop/ (Neo4j 및 DB 컨테이너 관리)
-https://neo4j.com/deployment-center/ (Neo4j Desktop - 온톨로지 시각화 및 관리)
-https://protege.stanford.edu/ (Protégé - 온톨로지 설계 및 편집 표준 도구)
-https://www.postman.com/downloads/ (API 테스트 및 디버깅)
-https://git-scm.com/downloads (버전 관리 시스템)
+env:
+  - 1. 클라이언트 및 플랫폼 (Client & Platform)
+  - Target: 웹 브라우저 기반 (Multi-Device 지원)
+  - 환경: 데스크톱/노트북(Windows, Mac, Linux) 및 모바일 브라우저 최적화
+  - 특이사항: 별도의 네이티브 앱(iOS/Android)이나 엔진(Unity/Unreal)을 사용하지 않는 Web-Standard 방식 채택
+  - 2. 프론트엔드 (Front-end)
+  - Framework: Vue 3 (Composition API)
+  - Build Tool: Vite (고속 번들링 및 개발 서버)
+  - Key Libraries:
+  - 1. UI/Design: Vuestic UI, Element Plus, Tailwind CSS
+  - 2. Visualization: vis-network (온톨로지 그래프 시각화 핵심)
+  - 3. Content: marked, github-markdown-css (문서 렌더링)
+  - 4. Communication: axios, vue-router
+  - 3. 백엔드 (Back-end)
+  - Language: Python 3.x
+  - Framework: FastAPI (고성능 비동기 API 프레임워크)
+  - Server: Uvicorn (ASGI)
+  - Key Libraries:
+  - 1. Core: Pydantic (데이터 검증), python-dotenv (환경 변수 관리)
+  - 2. Async: FastAPI CORS Middleware, Threading (LLM 작업 병렬 처리)
+  - 4. 데이터 관리 (Data Management)
+  - Storage Strategy: File System Based Storage (No-DB Architecture)
+  - 5. 외부 서비스 및 AI 모델 (External API & AI)
+  - Main LLM: OpenAI API (GPT-5 계열 모델)
+
+url:
+  - https://www.python.org/downloads/ (Python 3.10+ 언어 환경)
+  - https://code.visualstudio.com/ (VS Code 코드 에디터)
+  - https://www.docker.com/products/docker-desktop/ (Neo4j 및 DB 컨테이너 관리)
+  - https://neo4j.com/deployment-center/ (Neo4j Desktop - 온톨로지 시각화 및 관리)
+  - https://protege.stanford.edu/ (Protégé - 온톨로지 설계 및 편집 표준 도구)
+  - https://www.postman.com/downloads/ (API 테스트 및 디버깅)
+  - https://git-scm.com/downloads (버전 관리 시스템)
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

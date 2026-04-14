@@ -200,18 +200,21 @@ UI/UX 중심의 시각적 결과물 설계
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: 1. Client 디바이스를 PC로 제공
-2. FE는 Next.js(React), TypeScript 사용
-3. BE는 FastAPI 사용
-4. DB는 PostgreSQL 사용
-5. 사용하는 특별한 라이브러리는 FE ( Tailwind CSS, TanStack Query, Leaflet) / BE ( SQLAlchemy, Pydantic, Uvicorn) 사용
-6. API Call로 사용할 서비스는 OpenAI 사용
-- **url**: https://nodejs.org/ko
-https://www.python.org
-https://code.visualstudio.com
-https://git-scm.com
-https://www.postgresql.org/download/
-https://www.docker.com/products/docker-desktop/
+env:
+  - 1. Client 디바이스를 PC로 제공
+  - 2. FE는 Next.js(React), TypeScript 사용
+  - 3. BE는 FastAPI 사용
+  - 4. DB는 PostgreSQL 사용
+  - 5. 사용하는 특별한 라이브러리는 FE ( Tailwind CSS, TanStack Query, Leaflet) / BE ( SQLAlchemy, Pydantic, Uvicorn) 사용
+  - 6. API Call로 사용할 서비스는 OpenAI 사용
+
+url:
+  - https://nodejs.org/ko
+  - https://www.python.org
+  - https://code.visualstudio.com
+  - https://git-scm.com
+  - https://www.postgresql.org/download/
+  - https://www.docker.com/products/docker-desktop/
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

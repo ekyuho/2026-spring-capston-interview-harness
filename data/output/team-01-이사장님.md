@@ -224,19 +224,22 @@ NLP (Natural Language Processing) ACL, NAACL, EMNLP
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: 1. Client 디바이스를: PC(Windows, Mac) 및 GPU 서버 기반 연구 환경
-2. 딥러닝 프레임워크: Python/PyTorch/CUDA/CuDNN 기반 GPU 환경
-3. 데이터셋: Himawari-8/9 TC Archive, TC PRIMED, IBTrACS, ERA5 등
-4. 활용 모델: CLIP 기반 Vision-Language Model
-5. 사전학습 모델: CLIP pretrained model
-6. 라이브러리: NumPy, Pandas, Matplotlib, TensorBoard, NetCDF 등
-7. 데이터 시각화 뷰어: Panoply
-- **url**: https://www.python.org/downloads/ (Python)
-https://developer.nvidia.com/cuda-downloads (CUDA)
-https://developer.nvidia.com/cudnn (CuDNN)
-https://www.anaconda.com/download (Anaconda)
-https://pytorch.org/get-started/locally/ (Pytorch 설치에 필요한 명령어 생성)
-https://www.giss.nasa.gov/tools/panoply/ (Panoply, NASA 제공 데이터 시각화)
+env:
+  - 1. Client 디바이스를: PC(Windows, Mac) 및 GPU 서버 기반 연구 환경
+  - 2. 딥러닝 프레임워크: Python/PyTorch/CUDA/CuDNN 기반 GPU 환경
+  - 3. 데이터셋: Himawari-8/9 TC Archive, TC PRIMED, IBTrACS, ERA5 등
+  - 4. 활용 모델: CLIP 기반 Vision-Language Model
+  - 5. 사전학습 모델: CLIP pretrained model
+  - 6. 라이브러리: NumPy, Pandas, Matplotlib, TensorBoard, NetCDF 등
+  - 7. 데이터 시각화 뷰어: Panoply
+
+url:
+  - https://www.python.org/downloads/ (Python)
+  - https://developer.nvidia.com/cuda-downloads (CUDA)
+  - https://developer.nvidia.com/cudnn (CuDNN)
+  - https://www.anaconda.com/download (Anaconda)
+  - https://pytorch.org/get-started/locally/ (Pytorch 설치에 필요한 명령어 생성)
+  - https://www.giss.nasa.gov/tools/panoply/ (Panoply, NASA 제공 데이터 시각화)
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 

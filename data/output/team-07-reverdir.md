@@ -112,21 +112,24 @@ AI 투명성 리포트 (텍스트로 간단히 정리):
 
 ## 6. 기반 소프트웨어 리스트
 
-- **env**: Device: Mobile(Android)
-FE: Flutter (Dart)
-BE: Spring Boot (Java)
-DB: PostgreSQL
-5: OAuth
-API Call: FCM(Firebase Cloud Messaging), Kakao Link API
-- **url**: https://docs.flutter.dev/install
-https://developer.android.com/studio?hl=ko
-https://code.visualstudio.com/
-https://git-scm.com/
-https://www.oracle.com/java/technologies/downloads/
-https://spring.io/projects/spring-boot
-https://www.postgresql.org/download/
-https://firebase.google.com/docs/cloud-messaging
-https://developers.kakao.com/
+env:
+  - Device: Mobile(Android)
+  - FE: Flutter (Dart)
+  - BE: Spring Boot (Java)
+  - DB: PostgreSQL
+  - 5: OAuth
+  - API Call: FCM(Firebase Cloud Messaging), Kakao Link API
+
+url:
+  - https://docs.flutter.dev/install
+  - https://developer.android.com/studio?hl=ko
+  - https://code.visualstudio.com/
+  - https://git-scm.com/
+  - https://www.oracle.com/java/technologies/downloads/
+  - https://spring.io/projects/spring-boot
+  - https://www.postgresql.org/download/
+  - https://firebase.google.com/docs/cloud-messaging
+  - https://developers.kakao.com/
 
 ## 7. 인터뷰에서 확인할 핵심 쟁점
 
