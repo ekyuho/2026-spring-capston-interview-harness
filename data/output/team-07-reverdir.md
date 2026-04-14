@@ -35,9 +35,13 @@ github 관련:
 - all ok
 
 본 프로젝트에 있어서 팀원별 R&R(Role & Responsibility):
-- 공통: PM 프로젝트 기획 및 보고서/문서 작성
-- 이은효: Frontend Developer (UI/UX) Flutter 기반 UI 구현, 사용자 인터페이스 설계, 디자인 시스템 구축 Lyu Dongying: Frontend Developer (Data/Logic) 상태관리, API 연동, 실시간 데이터 처리 및 클라이언트 로직 구현
-- 전채연: Backend Developer Spring Boot 기반 서버 개발, API 설계, DB 및 인증 시스템 구축
+
+- **공통**
+  - PM 프로젝트 기획 및 보고서/문서 작성
+- **이은효**
+  - Frontend Developer (UI/UX) Flutter 기반 UI 구현, 사용자 인터페이스 설계, 디자인 시스템 구축 Lyu Dongying: Frontend Developer (Data/Logic) 상태관리, API 연동, 실시간 데이터 처리 및 클라이언트 로직 구현
+- **전채연**
+  - Backend Developer Spring Boot 기반 서버 개발, API 설계, DB 및 인증 시스템 구축
 
 기말에 대략 어떤 것을 만들어 보여줄지의 개요, 그 의미:
 - 기말에 발표할 MVP로는 마니또 플레이를 진행할 수 있는 방 생성, 랜덤 매칭 이후 게임의 지속성 유지를 위한 비밀 쪽지 기능, 이후의 결과 리포트를 위한 비밀 쪽지 내용을 읽어들이고 이를 파라미터화하여 정보값을 저장 후 이를 결과 데이터와 연결하여 출력하는 수준까지를 목표로 합니다. 이는 저희 팀의 주제인 소셜 마니또 앱의 기본 구조(방 생성, 랜덤 매칭, 결과 발표)와 저희 팀이 갖는 차별점인 지속성(비밀 쪽지) 및 추억화(쪽지 내용을 기반으로 한 결과 데이터 생성)를 가장 단순하고 확실하게 보여줄 수 있는 핵심적인 기능의 흐름이라고 생각하여 이와 같이 선정하게 되었습니다.
