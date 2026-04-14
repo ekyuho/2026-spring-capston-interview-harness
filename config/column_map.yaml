@@ -35,10 +35,8 @@ initial_survey:
   student_name: "이름"
   email: "이메일 주소"
   content_columns:
-    - "관심 기술"
-    - "잘하는 것"
-    - "걱정되는 것"
-    - "희망 역할"
+    - "본인의 기술적 관심영역,  실제로 만들어서 작동시켜본 산출물, 남보다 잘한다고 생각되는 영역 등 소개"
+    - "이번에 팀이 구성된 계기"
 
 five_questions:
   source_key: five_questions
@@ -47,11 +45,7 @@ five_questions:
   student_name: "이름"
   email: "이메일 주소"
   content_columns:
-    - "질문1"
-    - "질문2"
-    - "질문3"
-    - "질문4"
-    - "질문5"
+    - "질문당 한줄씩 5개의 질문"
 
 base_software:
   source_key: base_software
@@ -59,11 +53,8 @@ base_software:
   team_name: ""
   student_name: ""
   content_columns:
-    - "기반소프트웨어"
-    - "입력"
-    - "출력"
-    - "실험결과"
-    - "자체평가"
+    - "env"
+    - "url"
 
 normalization:
   team_no:
