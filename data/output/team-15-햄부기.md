@@ -69,7 +69,110 @@ AI 투명성 리포트 (텍스트로 간단히 정리):
 
 ## 3. 팀지도교수 면담보고서
 
-자료 없음 또는 PDF 추출 필요
+<!-- page 1 -->
+
+1 / 4 
+팀 지도교수 면담 보고서 
+ 
+팀명 15팀 
+담당 교수 심재형 
+면담 회차 총 3회 (2026년 3월 12일 / 3월 19일 / 3월 26일) 
+면담 주기 매주 목요일 오후 4시 
+ 
+1 차 면담 — 2026 년 3 월 12 일 (목) 
+면담 개요 
+팀이 관심 있는 연구 분야를 교수님께 소개하고, 교수님의 초기 피드백 및 연구실 인프라 활
+용 가능성 논의하였다 
+팀 제안 관심 분야 
+• Computer Vision 
+• Edge Computing 
+• MLOps 
+교수님 코멘트 및 브레인스토밍 내용 
+팀의 관심 분야와 연계 가능한 기술적 주제들을 다음과 같이 제시해주셨다. 
+• 분산 추론 (Distributed Inference) 
+– 엣지 장치 또는 서버 여러 대에 모델을 분산하여 추론하는 방식 
+• 양자화 (Quantization) 
+– 모델 가중치의 비트 수를 줄여 연산량 및 메모리 사용량을 감소시키는 기법 
+• 가지치기 (Pruning) 
+– 가중치 중 0 에 근접한 값들을 0 으로 제거하여 모델을 경량화하는 기법 
+• 지식 증류 (Knowledge Distillation) 
+– 작은 모델(Student)을 학습할 때 큰 모델(Teacher)의 소프트 레이블(출력 분포)을 함께 
+학습시켜 큰 모델의 지식을 이전하는 기법
+
+
+<!-- page 2 -->
+
+2 / 4 
+인프라 안내 
+• 교수님 연구실 보유 엣지 컴퓨팅 관련 인프라를 팀에서 활용할 수 있음을 안내받았다 
+면담 일정 결정 
+• 정기 면담 일정: 매주 목요일 오후 4 시로 확정 
+ 
+2 차 면담 — 2026 년 3 월 19 일 (목) 
+면담 개요 
+교수님께서 1차 면담 이후 검토한 결과를 바탕으로, 연구 방향 및 핵심 기술 주제를 제시해 
+주셨다. 
+교수님 제시 연구 방향 
+• 활용 하드웨어: NVIDIA Jetson AGX Orin (연구실 인프라, 원격 접속 가능) 
+• 핵심 기술: 구조적 가지치기(Structured Pruning) → 특히 NVIDIA 에서 제공하는 2:4 Sparsity 
+기법 
+• 연구 목표 방향성: 가지치기(Pruning)를 활용하여 Vision 모델의 추론 속도 향상 및 경량화 
+달성 
+• 경량화 대상 모델 후보: Vision Transformer (ViT) 계열 
+교수님 제공 자료 
+• 관련 논문 1 편 제공 (다음 면담까지 읽어올 것) 
+다음 면담까지 과제 
+• 제공받은 논문 읽기 
+• 구조적 가지치기(Structured Pruning) 개념 공부 
+• 2:4 Sparsity 기법 원리 파악 
+ 
+3 차 면담 — 2026 년 3 월 26 일 (목) 
+면담 개요 
+2차 면담 과제로 공부한 내용을 보고하고, 팀이 자체 서베이한 관련 논문을 소개하였다. 이
+후 교수님의 피드백을 바탕으로 향후 연구 방향 및 실험 계획을 구체화하였다.
+
+
+<!-- page 3 -->
+
+3 / 4 
+공부 보고 내용 (팀 준비) 
+• 구조적 가지치기 논문 학습: "Learning Structured Sparsity in Deep Neural Networks" 
+• 2:4 Sparsity 개념 및 동작 원리 학습 
+• 관련 논문 서베이 수행 
+소개 논문 
+"Boost Vision Transformer with GPU-Friendly Sparsity and Quantization" 
+• 사용 모델: Vision Transformer 계열 — Swin Transformer, DeiT 
+• 적용 기법: 
+– 2:4 Sparsity 적용 
+– Knowledge Distillation (지식 증류) 병행 
+– Quantization-Aware Training (QAT, 양자화 인식 학습) 적용 
+• 수행 Task: 이미지 분류(Classification), 객체 탐지(Detection), 의미론적 분할(Segmentation) 
+3 가지 태스크 모두 실험 
+• 실험 환경: NVIDIA A100 GPU 로 모델 압축 / A100 및 Jetson AGX Orin 으로 추론 성능 평가 
+교수님 코멘트 및 향후 지시사항 
+(1) 후속 논문 탐색 
+• 소개한 논문을 인용(cite)하고 있는 후속 논문을 찾아볼 것 
+• 본 논문과 유사한 접근 방식(approach)에서 한 단계 발전(advanced)된 연구를 파악하는 것이 
+목적 
+(2) 코드 실행 및 실험 재현 
+• 논문의 공개 코드(repository)를 받아서 직접 실행해볼 것 
+• 연구실 Jetson AGX Orin 에 원격 접속 환경을 제공해 주실 예정 → 접속 후 환경 설치 및 
+실험 진행 
+• 다음 주 최종 목표: 논문의 주요 실험 성과(key results) 재현 — 실제로 수치가 재현되는지 
+확인 
+• 우선적으로 재현할 항목: 논문 내 2:4 Sparsity 적용 실험 
+ 
+(3) 연구 확장 방향 탐색 
+• Vision Transformer 를 넘어, Multimodal 모델에 해당 기법 적용 가능성 검토 
+– 관련 Multimodal 모델 존재 여부 탐색 필요 
+• CLIP 논문 (Multimodal 대표 논문) 검토 권장
+
+
+<!-- page 4 -->
+
+4 / 4 
+• 논문에서 상당 부분이 이미 구현되어 있으므로, 주제 확장성(extensibility) 측면을 적극적으로 
+살펴볼 것
 
 ## 4. 팀원별 학기초 개인설문
 

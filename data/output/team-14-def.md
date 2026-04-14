@@ -35,7 +35,44 @@
 
 ## 3. 팀지도교수 면담보고서
 
-자료 없음 또는 PDF 추출 필요
+<!-- page 1 -->
+
+14(def)  
+def (team 14)
+  Agentic AI     : Apple silicon  
+ 
+, , 
+(Mac mini, Mac studio  Apple Silicon ) Agent AI  , 
+bottleneck          ,  
+.
+  
+  ‘Q)’ ,   ‘  )’  .
+Q) benchmark          .
+Q)   device      ,   
+  KV Cache (SideQuest     ) KV
+cache       Bottleneck     
+.
+Q) Apple silicon          .
+ )  system sw stack  benchmark    
+ .
+ ) KV-Cache compression  agentic AI  .  KV-
+Cache         .  cache
+ bottleneck    , agent  , context   
+      .
+ )  Agent AI(open claw)  ,   bottleneck 
+    .
+
+
+<!-- page 2 -->
+
+Agentic AI       :      
+     .
+<     >
+SideQuest: Model-Driven KV Cache Management for Long-Horizon Agentic
+Reasoning
+ReAct: Synergizing Reasoning and Acting in Language Models
+Agentic AI: Autonomous Intelligence for Complex Goals—A Comprehensive Survey
+Mac Studio  Open claw     bottleneck
 
 ## 4. 팀원별 학기초 개인설문
 
