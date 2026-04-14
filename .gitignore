@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Generated data may include sensitive student survey content.
+data/raw/
+data/normalized/
+data/output/
