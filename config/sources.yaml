@@ -14,16 +14,16 @@ sources:
     name: 학기초 개인설문
     type: google_sheet_csv
     spreadsheet_id: "1-f0Rw55PWrTvnYjbyoJsvyymihgyUMAXzoGYuYuLSPk"
-    gid: "300231329"
+    gid: "1166981779"
 
   five_questions:
     name: 개인별 5 Questions
     type: google_sheet_csv
     spreadsheet_id: "1XU4Vks1vNhAJWYG7x55kDFagnzfxQD-0MgNyu4NdEig"
-    gid: "993953704"
+    gid: "542184958"
 
   base_software:
     name: 기반 소프트웨어 리스트
     type: google_sheet_csv
     spreadsheet_id: "1aN2rfWu1M7mHkhOW76gXTAjjGyb1yMzN5kOgyLlMjaE"
-    gid: "1895650474"
+    gid: "9030440"

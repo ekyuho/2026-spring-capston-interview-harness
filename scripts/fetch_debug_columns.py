@@ -32,7 +32,7 @@ def google_sheet_csv_url(spreadsheet_id: str, gid: str) -> str:
 def fetch_text(url: str) -> str:
     response = requests.get(url, timeout=30)
     response.raise_for_status()
-    return response.text
+    return response.content.decode("utf-8-sig")
 
 
 def safe_filename(name: str) -> str:
