@@ -1,0 +1,81 @@
+# 컬럼 매핑 파일
+# debug_columns.md에 나온 실제 컬럼명을 기준으로 병합에 사용할 컬럼을 지정한다.
+# 값은 Google Sheet의 컬럼명과 정확히 일치해야 한다.
+
+project_brief:
+  source_key: project_brief
+  team_no_pattern: "Team\\s+(\\d+)"
+  fields:
+    team_name: "팀명"
+    track: "트랙"
+    project_title: "프로젝트명"
+    members: "팀구성"
+    advisor: "지도교수"
+    github_repo: "GitHub Repo"
+    project_summary: "프로젝트 개요"
+
+supplement:
+  source_key: supplement
+  team_no: "팀번호"
+  team_name: ""
+  student_name: ""
+  content_columns:
+    - "github 관련"
+    - "본 프로젝트에 있어서 팀원별 R&R(Role & Responsibility)"
+    - "핵심기술/솔루션 데모/코드리뷰 스토리\n- 기반소프트웨어는 무엇이고, \n- 팀이 수정/변경 등 한 부분이 있다면 무얼 했고,\n- 이것으로 무얼 했고,\n- 입력이 무엇이고,\n- 출력이 무엇이 돼야,\n- 실험결과에 대한 자체 평가는 무엇이고 (우리의 문제해결에 잘 적용될 것 같은지 정도)\n- 이 실험이 기말에 무엇으로 쓰일것이다\n\n정도의 스토리라인."
+    - "기말에 대략 어떤 것을 만들어 보여줄지의 개요, 그 의미"
+    - "서비스를 지향하는 산학트랙의 경우, API Call을 통해 어떤 AI 서비스를, 어떤 목적으로, 어떤 파라미터를 주고, 그 결과를 어떻게 활용하는지 간단히 정리(어떻든 AI를 적극적으로 적용해보세요)"
+    - "AI 투명성 리포트 (텍스트로 간단히 정리)"
+    - "프로젝트 주제/솔루션/방향성에 대하여, 팀이 이해하고 있는 \n팀지도교수님 코멘트의 핵심내용 요약"
+
+initial_survey:
+  source_key: initial_survey
+  team_no: "팀번호"
+  team_name: ""
+  student_name: "이름"
+  email: "이메일 주소"
+  content_columns:
+    - "관심 기술"
+    - "잘하는 것"
+    - "걱정되는 것"
+    - "희망 역할"
+
+five_questions:
+  source_key: five_questions
+  team_no: "팀번호"
+  team_name: ""
+  student_name: "이름"
+  email: "이메일 주소"
+  content_columns:
+    - "질문1"
+    - "질문2"
+    - "질문3"
+    - "질문4"
+    - "질문5"
+
+base_software:
+  source_key: base_software
+  team_no: "팀번호"
+  team_name: ""
+  student_name: ""
+  content_columns:
+    - "기반소프트웨어"
+    - "입력"
+    - "출력"
+    - "실험결과"
+    - "자체평가"
+
+normalization:
+  team_no:
+    strip_prefixes:
+      - "Team"
+      - "팀"
+    zero_pad: 2
+  student_name:
+    remove_spaces: true
+    normalize_korean: true
+
+unresolved_policy:
+  missing_team_no: true
+  missing_student_name: true
+  unknown_column: true
