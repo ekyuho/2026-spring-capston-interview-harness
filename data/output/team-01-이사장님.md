@@ -32,11 +32,7 @@
 ## 2. 사전 보충자료 요약
 
 github 관련:
-- Class Repo의 Project Description의 내용은 최신상태로 PR되어있습니까?
-- 팀 Project Repo는 제3자가 검색해서 들어오게되었을때, 구조 이해에 도움이 되도록 Readme.MD 에 내용 정리해 두었습니까?
-- 팀 Project Repo의 폴더 구성은 통상 오픈소스 구성처럼 잘 구조화 되어있습니까?
-- 팀 Project Repo에 PR해가면서 공동작업을 github 활용하고 있습니까?
-- 데모한 모든 코드/데이타 등은 팀 Project Repo에 다 올라가 있습니까??
+- all ok
 
 본 프로젝트에 있어서 팀원별 R&R(Role & Responsibility):
 - 설영은: 총괄, 프롬프트 설계, 알고리즘 리드를 담당하며, 전체 프로젝트 기획 및 일정을 총괄하고 CLIP 프롬프트 전략 수립과 80개 템플릿 설계 방향을 결정한다. 또한 MTA 알고리즘 설계 및 MeanShift 방법론을 검토하며, 연구 결과물의 최종 품질 확인 및 논문/보고서 핵심 파트를 정리한다.

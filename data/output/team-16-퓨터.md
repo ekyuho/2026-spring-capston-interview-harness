@@ -32,11 +32,7 @@
 ## 2. 사전 보충자료 요약
 
 github 관련:
-- Class Repo의 Project Description의 내용은 최신상태로 PR되어있습니까?
-- 팀 Project Repo는 제3자가 검색해서 들어오게되었을때, 구조 이해에 도움이 되도록 Readme.MD 에 내용 정리해 두었습니까?
-- 팀 Project Repo의 폴더 구성은 통상 오픈소스 구성처럼 잘 구조화 되어있습니까?
-- 팀 Project Repo에 PR해가면서 공동작업을 github 활용하고 있습니까?
-- 데모한 모든 코드/데이타 등은 팀 Project Repo에 다 올라가 있습니까??
+- all ok
 
 본 프로젝트에 있어서 팀원별 R&R(Role & Responsibility):
 - 최윤서- PM/기획 총괄. 프로젝트 목표·범위 설정, 일정/마일스톤 관리, 요구사항 정의(PRD), 기능 우선순위 결정, 회의 운영, 교수님 커뮤니케이션, 리스크 관리, 최종 발표자료 통합 및 발표 리딩 담당. 이찬희- 프론트엔드 총괄. Next.js 기반 UI(Auth/채팅) 구현, SSE 스트리밍 응답 렌더링, Zustand 상태관리, Canvas2D 캐릭터 시각화 구현, 반응형/UX 개선, 프론트 테스트 및 백엔드 API 연동 담당. 김민주- 백엔드 총괄. FastAPI /api/chat 포함 핵심 API 설계·구현, Supabase(Auth/RLS/DB) 연동, 데이터 스키마 관리, 에러 핸들링·로깅, 서버 테스트/성능 점검, 배포 환경 구성 및 운영 담당. 백은혜- AI 총괄. 발화 분석기(5축 점수) 설계·개선, MATRIX/EMA 로직 구현, 프롬프트 빌더 설계, 슬랭 파이프라인(Reddit 수집·pgvector 검색) 구축, 모델 성능 평가 및 개선, AI 품질 관리 담당.

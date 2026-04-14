@@ -32,11 +32,7 @@
 ## 2. 사전 보충자료 요약
 
 github 관련:
-- Class Repo의 Project Description의 내용은 최신상태로 PR되어있습니까?
-- 팀 Project Repo는 제3자가 검색해서 들어오게되었을때, 구조 이해에 도움이 되도록 Readme.MD 에 내용 정리해 두었습니까?
-- 팀 Project Repo의 폴더 구성은 통상 오픈소스 구성처럼 잘 구조화 되어있습니까?
-- 팀 Project Repo에 PR해가면서 공동작업을 github 활용하고 있습니까?
-- 데모한 모든 코드/데이타 등은 팀 Project Repo에 다 올라가 있습니까??
+- all ok
 
 본 프로젝트에 있어서 팀원별 R&R(Role & Responsibility):
 - 성현: 작업 문서화, 실험 실행 •

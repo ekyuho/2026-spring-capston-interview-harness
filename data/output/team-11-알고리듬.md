@@ -32,11 +32,7 @@
 ## 2. 사전 보충자료 요약
 
 github 관련:
-- Class Repo의 Project Description의 내용은 최신상태로 PR되어있습니까?
-- 팀 Project Repo는 제3자가 검색해서 들어오게되었을때, 구조 이해에 도움이 되도록 Readme.MD 에 내용 정리해 두었습니까?
-- 팀 Project Repo의 폴더 구성은 통상 오픈소스 구성처럼 잘 구조화 되어있습니까?
-- 팀 Project Repo에 PR해가면서 공동작업을 github 활용하고 있습니까?
-- 데모한 모든 코드/데이타 등은 팀 Project Repo에 다 올라가 있습니까??
+- all ok
 
 본 프로젝트에 있어서 팀원별 R&R(Role & Responsibility):
 - 조상은(PM): 요구사항 정의, 제약조건 로직 설계 및 전체 프로젝트 일정/대외 커뮤니케이션 총괄 이시은(AI/BE): LLM 활용 요구사항 파싱 및 유전 알고리즘 기반 시간표 자동 생성 엔진 개발 정지유(FE/UX): 대시보드 UI/UX 설계 및 리얼타임 시간표 데이터 시각화 구현
