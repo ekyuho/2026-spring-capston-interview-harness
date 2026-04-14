@@ -1,14 +1,6 @@
 # Team 13. Semicolone; 심층인터뷰 준비서
 
-## 1. 프로젝트 개요
-
-- 트랙: 
-- 프로젝트명: 
-- 팀원: 
-- 지도교수: 
-- GitHub Repo: https://github.com/Semicolone](https://github.com/Semicolone
-
-## 2. 만들고자 하는 것
+## 1. 만들고자 하는 것
 
 ## Team 13 Semicolone;
 
@@ -39,11 +31,11 @@
 
 <a id="team-14"></a>
 
-## 3. 사전 보충자료 요약
+## 2. 사전 보충자료 요약
 
 자료 없음 또는 정리 필요
 
-## 4. 팀원별 학기초 개인설문
+## 3. 팀원별 학기초 개인설문
 
 ### 이채원
 
@@ -56,7 +48,7 @@
 산출물: 관심 영역 관련 실험 진행 중
 - **이번에 팀이 구성된 계기**: 연구 쪽에 관심이 있지만 산학 관련 경험을 쌓아보지 않았기 때문에 졸업 프로젝트는 산학 트랙으로 해보기로 결정한 후 에브리타임에서 목적이 비슷한 사람을 모아 구성하게 되었습니다.
 
-## 5. 개인별 5 Questions
+## 4. 개인별 5 Questions
 
 ### 이채원
 
@@ -82,7 +74,7 @@
 - 위의 문제에 대해 해결하기 위해 노력했던 적이 있나요?
 - AI에게 얻은 지식을 따로 기록하시나요?
 
-## 6. 기반 소프트웨어 리스트
+## 5. 기반 소프트웨어 리스트
 
 - **env**: Client 디바이스:Pc(windows)
 프론트엔드
@@ -112,7 +104,7 @@ MySQL: https://www.mysql.com/downloads/
 PostgreSQL: https://www.postgresql.org/download/  
 OpenAI API: https://developers.openai.com/api/docs/quickstart/
 
-## 7. 인터뷰에서 확인할 핵심 쟁점
+## 6. 인터뷰에서 확인할 핵심 쟁점
 
 - 문제 정의가 충분히 좁혀졌는가?
 - 학기말 산출물이 실제 구현 가능한 형태로 정의되어 있는가?
@@ -120,7 +112,7 @@ OpenAI API: https://developers.openai.com/api/docs/quickstart/
 - 팀원별 역할과 책임이 명확한가?
 - GitHub repo와 실제 개발 진도가 일치하는가?
 
-## 8. 교수자용 질문 초안
+## 7. 교수자용 질문 초안
 
 1. 이 프로젝트에서 학기말에 반드시 보여줄 수 있어야 하는 최소 산출물은 무엇인가?
 2. 현재 가장 불확실한 기술 요소는 무엇이며, 언제까지 검증할 계획인가?

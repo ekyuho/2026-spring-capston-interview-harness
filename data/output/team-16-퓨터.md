@@ -1,14 +1,6 @@
 # Team 16. 퓨터 심층인터뷰 준비서
 
-## 1. 프로젝트 개요
-
-- 트랙: 
-- 프로젝트명: 
-- 팀원: 
-- 지도교수: 
-- GitHub Repo: https://github.com/puter8/capstone](https://github.com/puter8/capstone
-
-## 2. 만들고자 하는 것
+## 1. 만들고자 하는 것
 
 ## Team 16 퓨터
 
@@ -37,7 +29,7 @@
 
 <a id="team-17"></a>
 
-## 3. 사전 보충자료 요약
+## 2. 사전 보충자료 요약
 
 - **github 관련**: Class Repo의 Project Description의 내용은 최신상태로 PR되어있습니까?, 팀 Project Repo는 제3자가 검색해서 들어오게되었을때, 구조 이해에 도움이 되도록 Readme.MD 에 내용 정리해 두었습니까?, 팀 Project Repo의 폴더 구성은 통상 오픈소스 구성처럼 잘 구조화 되어있습니까?, 팀 Project Repo에 PR해가면서 공동작업을 github 활용하고 있습니까?, 데모한 모든 코드/데이타 등은 팀 Project Repo에 다 올라가 있습니까?
 - **본 프로젝트에 있어서 팀원별 R&R(Role & Responsibility)**: 최윤서- PM/기획 총괄. 프로젝트 목표·범위 설정, 일정/마일스톤 관리, 요구사항 정의(PRD), 기능 우선순위 결정, 회의 운영, 교수님 커뮤니케이션, 리스크 관리, 최종 발표자료 통합 및 발표 리딩 담당.
@@ -68,7 +60,7 @@ OpenAI Moderation API
 위험도 높은 입력은 즉시 차단/완화 응답으로 대체하고, 정상 입력만 대화 생성 파이프라인으로 전달
 - **AI 투명성 리포트 (텍스트로 간단히 정리)**: https://github.com/puter8/capstone/blob/main/AI%20transparency%20report.md
 
-## 4. 팀원별 학기초 개인설문
+## 3. 팀원별 학기초 개인설문
 
 ### 최윤서
 
@@ -90,7 +82,7 @@ OpenAI Moderation API
 - **본인의 기술적 관심영역,  실제로 만들어서 작동시켜본 산출물, 남보다 잘한다고 생각되는 영역 등 소개**: AI와 데이터 분석을 활용한 서비스 개발에 관심이 있습니다. Python을 활용해 이커머스 리뷰 데이터를 수집·분석하고 감성 분석 기반 추천 시스템을 구현한 경험이 있습니다. 또한 React와 Spring Boot를 활용한 웹 서비스 개발을 진행했으며, STT 기능을 적용해 음성을 텍스트로 변환하는 기능도 구현해 보았습니다.
 - **이번에 팀이 구성된 계기**: 추구하는 바와 관심사 일치
 
-## 5. 개인별 5 Questions
+## 4. 개인별 5 Questions
 
 ### 이찬희
 
@@ -128,7 +120,7 @@ OpenAI Moderation API
 4. 이 서비스를 사용한다면 가장 자주 쓰고 싶은 상황은 언제인가요? (예: 혼자 회화 연습할 때, 심심할 때, 시험 준비할 때)
 5. 무료 기능과 유료 기능이 나뉜다면, 어떤 기능까지는 돈을 내고 사용할 의향이 있나요? (예: 무제한 대화, 음성 대화, 프리미엄 캐릭터, 맞춤 피드백)
 
-## 6. 기반 소프트웨어 리스트
+## 5. 기반 소프트웨어 리스트
 
 - **env**: 1. PC (Windows, Mac) 및 Mobile 웹 브라우저
 2. FE-Next.js 14, Tailwind CSS
@@ -147,7 +139,7 @@ Postman (API 엔드포인트 테스트용): https://www.postman.com/downloads/
 Git (버전 관리용): https://git-scm.com/downloads
 DBeaver (DB 관리 GUI 도구): https://dbeaver.io/download/
 
-## 7. 인터뷰에서 확인할 핵심 쟁점
+## 6. 인터뷰에서 확인할 핵심 쟁점
 
 - 문제 정의가 충분히 좁혀졌는가?
 - 학기말 산출물이 실제 구현 가능한 형태로 정의되어 있는가?
@@ -155,7 +147,7 @@ DBeaver (DB 관리 GUI 도구): https://dbeaver.io/download/
 - 팀원별 역할과 책임이 명확한가?
 - GitHub repo와 실제 개발 진도가 일치하는가?
 
-## 8. 교수자용 질문 초안
+## 7. 교수자용 질문 초안
 
 1. 이 프로젝트에서 학기말에 반드시 보여줄 수 있어야 하는 최소 산출물은 무엇인가?
 2. 현재 가장 불확실한 기술 요소는 무엇이며, 언제까지 검증할 계획인가?

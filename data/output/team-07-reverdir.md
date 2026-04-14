@@ -1,14 +1,6 @@
 # Team 07. reverdir 심층인터뷰 준비서
 
-## 1. 프로젝트 개요
-
-- 트랙: 
-- 프로젝트명: 
-- 팀원: 
-- 지도교수: 
-- GitHub Repo: https://github.com/team-capstone-reverdir-2026/reverdir_repo](https://github.com/team-capstone-reverdir-2026/reverdir_repo
-
-## 2. 만들고자 하는 것
+## 1. 만들고자 하는 것
 
 ## Team 7 reverdir
 
@@ -37,7 +29,7 @@
 
 <a id="team-8"></a>
 
-## 3. 사전 보충자료 요약
+## 2. 사전 보충자료 요약
 
 - **github 관련**: Class Repo의 Project Description의 내용은 최신상태로 PR되어있습니까?, 팀 Project Repo는 제3자가 검색해서 들어오게되었을때, 구조 이해에 도움이 되도록 Readme.MD 에 내용 정리해 두었습니까?, 팀 Project Repo의 폴더 구성은 통상 오픈소스 구성처럼 잘 구조화 되어있습니까?, 팀 Project Repo에 PR해가면서 공동작업을 github 활용하고 있습니까?, 데모한 모든 코드/데이타 등은 팀 Project Repo에 다 올라가 있습니까?
 - **본 프로젝트에 있어서 팀원별 R&R(Role & Responsibility)**: 공통: PM
@@ -59,7 +51,7 @@ Spring Boot 기반 서버 개발, API 설계, DB 및 인증 시스템 구축
 
 외에도 팀의 부족한 지식을 AI로부터 보충할 수 있는 경우에는 AI를 적극 활용하여 기반을 다지고, 이후에 검색을 통한 재검증을 거친다. 이를 통해 아이디어를 발전시키고 다듬어가며 기획을 정리하고 프로젝트를 진행하고 있다.
 
-## 4. 팀원별 학기초 개인설문
+## 3. 팀원별 학기초 개인설문
 
 ### LYU DONGYING
 
@@ -78,7 +70,7 @@ Spring Boot 기반 서버 개발, API 설계, DB 및 인증 시스템 구축
 - **본인의 기술적 관심영역,  실제로 만들어서 작동시켜본 산출물, 남보다 잘한다고 생각되는 영역 등 소개**: 백엔드 개발에 관심이 있습니다. 자바와 스프링을 이용해 기본적인 CRUD, webSocket과 sse를 붙여 알림 및 DM 기능이 있는 웹사이트를 구현해본 경험이 있습니다만, 남보다 잘한다고 자신있게 말할 수 있는 부분은 아직 없습니다. 더 깊이 공부하고 경험을 쌓고 싶습니다.
 - **이번에 팀이 구성된 계기**: 사전에 팀을 구성하지 못한 학생들끼리 모여 팀을 만들게 되었습니다.
 
-## 5. 개인별 5 Questions
+## 4. 개인별 5 Questions
 
 ### 전채연
 
@@ -104,7 +96,7 @@ Spring Boot 기반 서버 개발, API 설계, DB 및 인증 시스템 구축
 만약 오프라인 대신 앱을 써야 한다면, 가장 걱정되는 점은 무엇인가요?
 앞으로 이런 상황이 있을 때, 마니또 기능을 제공하는 앱이 존재한다면 앱을 찾아서 쓸 것 같나요, 아니면 그냥 카톡으로 할 것 같나요? (왜?)
 
-## 6. 기반 소프트웨어 리스트
+## 5. 기반 소프트웨어 리스트
 
 - **env**: Device: Mobile(Android)
 FE: Flutter (Dart)
@@ -122,7 +114,7 @@ https://www.postgresql.org/download/
 https://firebase.google.com/docs/cloud-messaging
 https://developers.kakao.com/
 
-## 7. 인터뷰에서 확인할 핵심 쟁점
+## 6. 인터뷰에서 확인할 핵심 쟁점
 
 - 문제 정의가 충분히 좁혀졌는가?
 - 학기말 산출물이 실제 구현 가능한 형태로 정의되어 있는가?
@@ -130,7 +122,7 @@ https://developers.kakao.com/
 - 팀원별 역할과 책임이 명확한가?
 - GitHub repo와 실제 개발 진도가 일치하는가?
 
-## 8. 교수자용 질문 초안
+## 7. 교수자용 질문 초안
 
 1. 이 프로젝트에서 학기말에 반드시 보여줄 수 있어야 하는 최소 산출물은 무엇인가?
 2. 현재 가장 불확실한 기술 요소는 무엇이며, 언제까지 검증할 계획인가?
