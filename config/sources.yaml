@@ -1,0 +1,29 @@
+sources:
+  project_brief:
+    name: Class Project Brief
+    type: github_markdown
+    url: "https://raw.githubusercontent.com/ekyuho/Ewha-2026-Spring/main/project%20briefs.md"
+
+  supplement:
+    name: 심층인터뷰 보충자료
+    type: google_sheet_csv
+    spreadsheet_id: "1w9N8jzw_S6Ay6RjPSoaurxu3vx9ZHa1f8EEnmcmQ5SY"
+    gid: "603194317"
+
+  initial_survey:
+    name: 학기초 개인설문
+    type: google_sheet_csv
+    spreadsheet_id: "1-f0Rw55PWrTvnYjbyoJsvyymihgyUMAXzoGYuYuLSPk"
+    gid: "300231329"
+
+  five_questions:
+    name: 개인별 5 Questions
+    type: google_sheet_csv
+    spreadsheet_id: "1XU4Vks1vNhAJWYG7x55kDFagnzfxQD-0MgNyu4NdEig"
+    gid: "993953704"
+
+  base_software:
+    name: 기반 소프트웨어 리스트
+    type: google_sheet_csv
+    spreadsheet_id: "1aN2rfWu1M7mHkhOW76gXTAjjGyb1yMzN5kOgyLlMjaE"
+    gid: "1895650474"
