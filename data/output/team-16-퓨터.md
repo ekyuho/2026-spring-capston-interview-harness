@@ -55,6 +55,8 @@ github 관련:
 - API Call 기반으로 AI를 기능 단위에 분리 적용함. OpenAI GPT-4o (Chat Completions) 목적: 사용자 입력과 MATRIX 상태(5축 점수)를 반영한 맞춤형 영어 회화 답변 생성 생성된 답변을 채팅 UI에 출력하고, 다음 턴 학습 프롬프트의 컨텍스트로 누적 OpenAI Embeddings (text-embedding-3-small) 목적: 슬랭/표현 예문 검색용 벡터 인덱싱(RAG) 임베딩 벡터를 Supabase pgvector에 저장하고, 질의 시 유사도 검색 결과를 GPT-4o 프롬프트에 첨부해 답변 품질 향상 OpenAI Moderation API 목적: 욕설·혐오·유해발화 필터링(안전한 학습 환경) 위험도 높은 입력은 즉시 차단/완화 응답으로 대체하고, 정상 입력만 대화 생성 파이프라인으로 전달
 
 AI 투명성 리포트 (텍스트로 간단히 정리):
+
+### AI 없이 팀이 직접 한 것
 - https://github.com/puter8/capstone/blob/main/AI%20transparency%20report.md
 
 ## 3. 팀지도교수 면담보고서
