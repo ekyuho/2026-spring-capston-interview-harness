@@ -1,0 +1,438 @@
+타임스탬프,이메일 주소,팀번호,"대략의 개발환경 구성요소
+1. Client 디바이스를  Mobile(iOS, Android)?  PC(Windows, Mac)?
+2. FE는  Angular, javaScript, Unity, Unreal.. ?
+3. BE는 spring, Flask, FastAPI, .. ?
+4. DB는 MySQL, Postgres, .. ?
+5. FE또는 BE에 사용하는 특별한 라이브러리는... ?
+6. API Call로 사용할 서비스는..   OpenAI, Gemini,...  ?
+","개발 머신에 설치할 소프트웨어 다운로드를 위한 사이트  URL
+(한줄에 하나씩)"
+2026. 3. 19 오후 4:36:39,jeyejong70@ewha.ac.kr,1,"1. Client 디바이스를: PC(Windows, Mac) 및 GPU 서버 기반 연구 환경
+2. 딥러닝 프레임워크: Python/PyTorch/CUDA/CuDNN 기반 GPU 환경
+3. 데이터셋: Himawari-8/9 TC Archive, TC PRIMED, IBTrACS, ERA5 등
+4. 활용 모델: CLIP 기반 Vision-Language Model
+5. 사전학습 모델: CLIP pretrained model
+6. 라이브러리: NumPy, Pandas, Matplotlib, TensorBoard, NetCDF 등
+7. 데이터 시각화 뷰어: Panoply","https://www.python.org/downloads/ (Python)
+https://developer.nvidia.com/cuda-downloads (CUDA)
+https://developer.nvidia.com/cudnn (CuDNN)
+https://www.anaconda.com/download (Anaconda)
+https://pytorch.org/get-started/locally/ (Pytorch 설치에 필요한 명령어 생성)
+https://www.giss.nasa.gov/tools/panoply/ (Panoply, NASA 제공 데이터 시각화)"
+2026. 3. 19 오후 4:55:27,a25840470@gmail.com,2,"1. Client 디바이스는 Mobile (iOS/Android 통합 앱)
+2. FE는 Flutter (Dart)
+3. BE는 FastAPI (Python)
+4. DB는 MySQL (사용자 정보 및 식단/운동 로그 저장)
+5. FE 또는 BE에 사용하는 특별한 라이브러리
+      - AI/DL: PyTorch(딥러닝 엔진), Ultralytics (YOLOv8/v10 모델 라이브러리)
+      - BE: SQLAlchemy (ORM), Pydantic (데이터 검증), Uvicorn (ASGI 서버)
+      - DATA: Pandas/NumPy (식단 영양소 데이터 처리)
+6. API Call로 사용할 서비스는 OpenAI API (GPT-4 기반 건강 상담 챗봇), 공공데이터포털 API (식품 영양 성분 데이터베이스)","Python: https://www.python.org/downloads/
+PyTorch: https://pytorch.org/get-started/locally/
+DBeaver: https://dbeaver.io/download/
+Flutter SDK: https://docs.flutter.dev/get-started/install
+Android Studio: https://developer.android.com/studio
+VS Code: https://code.visualstudio.com/
+Postman: https://www.postman.com/downloads/
+Git: https://git-scm.com/downloads"
+2026. 3. 21 오후 3:47:07,03.ryeong@gmail.com,3,"1. 클라이언트 및 플랫폼 (Client & Platform)
+Target: 웹 브라우저 기반 (Multi-Device 지원)
+환경: 데스크톱/노트북(Windows, Mac, Linux) 및 모바일 브라우저 최적화
+특이사항: 별도의 네이티브 앱(iOS/Android)이나 엔진(Unity/Unreal)을 사용하지 않는 Web-Standard 방식 채택
+
+2. 프론트엔드 (Front-end)
+Framework: Vue 3 (Composition API)
+Build Tool: Vite (고속 번들링 및 개발 서버)
+Key Libraries:
+1. UI/Design: Vuestic UI, Element Plus, Tailwind CSS
+2. Visualization: vis-network (온톨로지 그래프 시각화 핵심)
+3. Content: marked, github-markdown-css (문서 렌더링)
+4. Communication: axios, vue-router
+
+3. 백엔드 (Back-end)
+Language: Python 3.x
+Framework: FastAPI (고성능 비동기 API 프레임워크)
+Server: Uvicorn (ASGI)
+Key Libraries: 
+1. Core: Pydantic (데이터 검증), python-dotenv (환경 변수 관리) 
+2. Async: FastAPI CORS Middleware, Threading (LLM 작업 병렬 처리)
+
+4. 데이터 관리 (Data Management)
+Storage Strategy: File System Based Storage (No-DB Architecture)
+
+5. 외부 서비스 및 AI 모델 (External API & AI)
+Main LLM: OpenAI API (GPT-5 계열 모델)
+","https://www.python.org/downloads/ (Python 3.10+ 언어 환경)
+https://code.visualstudio.com/ (VS Code 코드 에디터)
+https://www.docker.com/products/docker-desktop/ (Neo4j 및 DB 컨테이너 관리)
+https://neo4j.com/deployment-center/ (Neo4j Desktop - 온톨로지 시각화 및 관리)
+https://protege.stanford.edu/ (Protégé - 온톨로지 설계 및 편집 표준 도구)
+https://www.postman.com/downloads/ (API 테스트 및 디버깅)
+https://git-scm.com/downloads (버전 관리 시스템)"
+2026. 3. 19 오후 5:32:11,png401@gmail.com,5,"1. Client 디바이스: PC (Windows, Mac)
+2. FE: Unity, Blender, Clip studio
+3. BE: 초기에는 Standalone 형태로 개발 후, 필요 시 FastAPI 기반 서버 연동 예정
+4. DB: 초기에는 로컬 데이터 저장 방식을 고려하고 있으며, 필요 시 MySQL 도입 예정
+5. 특별한 라이브러리: Unity URP/2D Light, TextMeshPro, JsonUtility, Custom Render Feature, Shader Graph, Post Processing, Cinemachine
+6. API Call 서비스:  로컬 LLM 또는 자체 호스팅 모델 검토 중","1. https://www.microsoft.com/windows 
+https://www.apple.com/macos
+2. https://unity.com/download
+3. https://www.python.org/downloads/ 
+https://fastapi.tiangolo.com/
+4. https://www.mysql.com/downloads/
+5. https://docs.unity3d.com/Manual/com.unity.textmeshpro.html
+https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest
+https://docs.unity3d.com/Packages/com.unity.cinemachine@latest
+https://docs.unity3d.com/Manual/JSONSerialization.html
+https://docs.unity3d.com/Manual/PostProcessingOverview.html
+6. https://www.python.org/downloads/
+https://pytorch.org/
+https://huggingface.co/models"
+2026. 3. 21 오전 7:57:41,eunjae0914@ewhain.net,6,"1. Client 디바이스를 PC로 제공
+2. FE는 Next.js(React), TypeScript 사용
+3. BE는 FastAPI 사용
+4. DB는 PostgreSQL 사용
+5. 사용하는 특별한 라이브러리는 FE ( Tailwind CSS, TanStack Query, Leaflet) / BE ( SQLAlchemy, Pydantic, Uvicorn) 사용
+6. API Call로 사용할 서비스는 OpenAI 사용","https://nodejs.org/ko
+https://www.python.org
+https://code.visualstudio.com
+https://git-scm.com
+https://www.postgresql.org/download/
+https://www.docker.com/products/docker-desktop/"
+2026. 3. 22 오후 4:13:36,eun_hyo0524@ewha.ac.kr,7,"Device: Mobile(Android)
+FE: Flutter (Dart)
+BE: Spring Boot (Java)
+DB: PostgreSQL
+5: OAuth
+API Call: FCM(Firebase Cloud Messaging), Kakao Link API","https://docs.flutter.dev/install
+https://developer.android.com/studio?hl=ko
+https://code.visualstudio.com/
+https://git-scm.com/
+https://www.oracle.com/java/technologies/downloads/
+https://spring.io/projects/spring-boot
+https://www.postgresql.org/download/
+https://firebase.google.com/docs/cloud-messaging
+https://developers.kakao.com/"
+2026. 3. 19 오후 5:04:34,jocheyoon@gmail.com,8,"1.Client Device: Wep App
+2.FE(Web)
+Core: React, TypeScript, Next.js
+State Management: TanStack Query, Zustand
+Styling: Emotion
+CI/CD: GitHub Actions
+3.BE:SpringBoot,docker
+4.DB:MySQL
+5.BE:Spring Data JPA,Spring WebSockets FE:Emotion,TanStack Query,Zustand
+6.API Call 서비스:OpenAI API(GPT-4o Vision)","https://www.jetbrains.com/idea/download/ (IntelliJ IDEA Community - BE IDE)
+https://www.docker.com/products/docker-desktop/ (Docker Desktop - 로컬 MySQL 및 Redis 컨테이너 구동용)
+https://www.postman.com/downloads/ (Postman - REST API 엔드포인트 테스트용)
+https://dev.mysql.com/downloads/ (MySQL)
+https://openai.com/ko-KR/api/ (OpenAI API)
+https://spring.io/ (SpringBoot)
+
+FE 개발 머신 설치 소프트웨어
+- Node.js: https://nodejs.org/en/download
+- pnpm: https://pnpm.io/installation
+- Git: https://git-scm.com/install
+- Visual Studio Code: https://code.visualstudio.com/download
+
+FE 주요 프레임워크 및 라이브러리 참고 URL
+- React: https://react.dev/learn/installation
+- Next.js: https://nextjs.org/docs/app/getting-started/installation
+- TypeScript: https://www.typescriptlang.org/download/
+- TanStack Query: https://tanstack.com/query/latest/docs/framework/react/installation
+- Zustand: https://zustand.docs.pmnd.rs/
+- Emotion: https://emotion.sh/docs/install
+- GitHub Actions: https://docs.github.com/actions"
+2026. 3. 19 오후 4:28:14,parknarim@ewha.ac.kr,9,"1. Client 디바이스 - PC
+2. FE - React(javascript), websocket client, recharts
+3. BE - FastAPI
+4. DB - PostgreSQL
+5. (BE) - pandas/numpy, scikit-learn, pytorch, statsmodels (Streaming) - websocket (알람) - SMTP/Slack API/Firebase 
+6. Binance API, OpenAI","https://nodejs.org/
+https://react.dev/
+https://code.visualstudio.com/
+https://www.python.org/
+https://fastapi.tiangolo.com/
+https://www.postgresql.org/download/
+https://www.docker.com/products/docker-desktop/
+https://git-scm.com/
+https://pytorch.org/get-started/locally/
+https://scikit-learn.org/stable/install.html
+https://numpy.org/install/
+https://pandas.pydata.org/docs/getting_started/install.html
+https://www.statsmodels.org/stable/install.html
+https://www.tensorflow.org/install (optional)"
+2026. 3. 19 오후 3:59:49,cathy0e0711@gmail.com,10,"1. Client 디바이스: PC(Windows, Mac)
+2. FE:React.js ,TailwindCSS
+3. BE:FastAPI (Python)
+4. DB: Firebase Firestore
+5. AI/LLM: tiktoken
+6. 외부 API: OpenAI / Anthropic / Google AI SDK
+7.크롤러: BeautifulSoup
+8. 배포: Vercel (프론트) + Railway or Render (백엔드)
+9. FE또는 BE에 사용하는 특별한 라이브러리:LiteLLM(백엔드),TanStack Query(프론트엔드)","Python (백엔드/AI ): https://www.python.org/downloads/
+Node.js (프론트엔드 실행): https://nodejs.org/
+Postman (API 테스트): https://www.postman.com/downloads/
+Firebase CLI (DB 연동 도구): https://firebase.google.com/docs/cli#install_the_firebase_cli
+LiteLLM Docs: https://docs.litellm.ai/"
+2026. 3. 20 오전 1:24:32,theancestoris@ewhain.net,11,"1. Web -> PC 권장
+2. javaScript
+3. spring
+4. MySQL 인데 PostgreSQL로 이전 고려중
+5. Redis 캐싱
+6. OpenAI","https://www.oracle.com/java/technologies/downloads/
+https://spring.io/projects/spring-boot
+https://start.spring.io/
+https://www.jetbrains.com/idea/download/
+https://git-scm.com/downloads
+https://www.python.org/downloads/
+https://numpy.org/install/
+https://pandas.pydata.org/
+https://scikit-learn.org/stable/install.html
+https://developers.google.com/optimization/install
+https://fastapi.tiangolo.com/
+https://pytorch.org/get-started/locally/
+https://mlflow.org/docs/latest/installation.html"
+2026. 3. 19 오후 5:38:13,2376206@ewhain.net,12,"1. Client 디바이스는 Windows를 기반으로 한 PC로 한다.
+2. FE는  React를 사용한다.
+3. BE는 FastAPI를 기반으로 구현한다.
+4. DB는 MySQL를 사용한다.
+5. FE또는 BE에 사용하는 특별한 라이브러리는 Google Maps JavaScript API를 활용하여 지도 기반 기능을 구현한다.
+6. API Call을 위해 OpenAI 서비스를 사용한다.","1. 클라이언트는 웹 브라우저 기반으로 동작하며 별도의 소프트웨어 설치가 필요하지 않다.
+2.https://nodejs.org/ko
+https://code.visualstudio.com/
+3.https://www.python.org/downloads/windows/
+4.https://dev.mysql.com/downloads/installer/
+5.https://cloud.google.com/cloud-console?hl=ko
+6.https://platform.openai.com/ (API 기반 서비스로 별도 설치 없이 사용)"
+2026. 3. 19 오후 5:52:14,fhwm4060@gmail.com,13,"Client 디바이스:Pc(windows)
+프론트엔드
+React.js
+사용자 입력 중심 UI/UX 설계 (질문·답변 입력, 인사이트 탐색)
+상태 관리 (Zustand 또는 Context API)
+반응형 웹 UI 구현
+🔹백엔드
+Spring Boot (Java)
+RESTful API 설계 및 데이터 처리
+사용자 인증 및 권한 관리 (Spring Security + JWT)
+스케줄링 기반 리마인드 기능 구현
+🔹 데이터베이스
+MySQL / PostgreSQL
+사용자 질문, 답변, 인사이트 데이터 저장
+카테고리 및 태그 기반 데이터 구조 관리
+🔹 AI 및 데이터 처리
+OpenAI API (LLM)
+질문·답변 기반 핵심 요약 생성
+키워드 추출 및 인사이트 도출
+텍스트 임베딩 (Embedding) 기반 유사도 분석
+인사이트 간 의미적 유사성 계산
+관련 인사이트 추천 기능 구현","React.js: https://react.dev/learn/installation  
+Spring Boot: https://docs.spring.io/spring-boot/installing.html
+MySQL: https://www.mysql.com/downloads/  
+PostgreSQL: https://www.postgresql.org/download/  
+OpenAI API: https://developers.openai.com/api/docs/quickstart/  
+
+"
+2026. 3. 19 오후 4:17:03,jzen16@ewha.ac.kr,14,"1. Client 디바이스
+
+- PC (macOS): 연구 대상이 Mac mini이므로 실험과 구동 모두 Mac 환경에서 진행
+
+2. FE 
+
+- Streamlit : 파이썬 기반으로 대시보드를 빠르게 만들 수 있어, 실시간 자원 사용량 그래프(CPU, GPU, RAM)를 시각화
+
+3. 특별한 라이브러리
+
+- MLX : Apple Silicon GPU/NPU를 최대한 활용하기 위한 애플의 공식 딥러닝 프레임워크
+
+- LangChain : Agent의 의사결정 루프를 설계
+
+6. API Call 서비스
+- 해당 없음
+- Local LLM (Llama 3, Ollama)의 활용. 외부 API(OpenAI 등)를 쓰면 '로컬 워크로드 최적화'라는 연구 취지에 어긋남. 로컬에 모델을 띄우고 호출함.","https://www.python.org/downloads/ (Python 환경 구축)
+https://ollama.com/download (로컬 LLM 구동 엔진)
+https://code.visualstudio.com/ (메인 IDE)
+https://www.docker.com/products/docker-desktop/ (DB 및 모니터링 툴 설치용)
+https://developer.apple.com/xcode/ (Apple Silicon 성능 분석 도구 포함)
+https://github.com/ml-explore/mlx (Apple ML 프레임워크 라이브러리)"
+2026. 3. 19 오후 4:16:21,cindyshin2211@gmail.com,15,"1. Client 디바이스 — PC (Windows) + Jetson AGX Orin (엣지 디바이스)
+2. FE — 없음
+3. BE — 없음
+4. DB — 없음 (실험 결과는 TensorBoard로 시각화)
+5. 특별한 라이브러리
+- PyTorch (모델 학습 및 가지치기)
+- Hugging Face Transformers (ViT 모델 로드)
+- torch.ao (2:4 Sparsity 적용)
+- TensorRT (Jetson 추론 최적화)
+- ONNX (모델 변환)
+- TensorBoard (실험 결과 시각화)
+6. API Call 서비스 — 없음","Python - https://www.python.org
+PyTorch - https://pytorch.org
+Hugging Face - https://huggingface.co
+TensorRT - https://developer.nvidia.com/tensorrt
+JetPack SDK - https://developer.nvidia.com/jetpack
+ONNX - https://onnx.ai
+Conda - https://docs.conda.io
+VS Code - https://code.visualstudio.com"
+2026. 3. 19 오후 3:48:45,kmj641620@gmail.com,16,"1. PC (Windows, Mac) 및 Mobile 웹 브라우저
+2. FE-Next.js 14, Tailwind CSS
+3. BE-Spring Boot 3 (Java), FastAPI (Python)
+4. DB-PostgreSQL, Pinecone, Supabase
+5. Rive, Zustand, JPA / Hibernate, LangChain, PRAW (Reddit), YouTube Data API
+6. LLM: OpenAI (GPT-4o) / Embedding: OpenAI (text-embedding-3-small)","VS Code (프론트엔드/AI 서버 개발용): https://code.visualstudio.com/download
+IntelliJ IDEA (Spring Boot 개발용): https://www.jetbrains.com/idea/download/
+Node.js (Next.js 14 실행용 ): https://nodejs.org/en/download/
+JDK 17 or 21 (Spring Boot 3 실행용): https://www.oracle.com/java/technologies/downloads/
+Python (FastAPI 및 AI 파이프라인용): https://www.python.org/downloads/
+Docker Desktop (컨테이너 관리 및 배포 테스트용): https://www.docker.com/products/docker-desktop/
+PostgreSQL (로컬 DB 테스트용): https://www.postgresql.org/download/
+Postman (API 엔드포인트 테스트용): https://www.postman.com/downloads/
+Git (버전 관리용): https://git-scm.com/downloads
+DBeaver (DB 관리 GUI 도구): https://dbeaver.io/download/"
+2026. 3. 19 오후 5:18:58,iioese109@gmail.com,17,"1. AI/ML: 소비 패턴 분석 및 예측 모델 (PyTorch)
+2. Data Analysis: Pandas, NumPy 기반 소비 데이터 처리 및 시계열 분석
+3. NLP: 자연어 입력 조건 분석 및 인사이트 생성 (OpenAI API)
+4. Recommendation: 사용자 소비 패턴 기반 하이브리드 추천 시스템
+5. FE: Kotlin (Android Native), Retrofit
+6. BE: FastAPI
+7. DB: MySQL","https://www.python.org/downloads/
+https://developer.android.com/studio
+https://kotlinlang.org/docs/home.html
+https://fastapi.tiangolo.com/
+https://dev.mysql.com/downloads/
+https://www.docker.com/get-started/
+https://docs.github.com/en/actions
+https://platform.openai.com/docs/"
+2026. 3. 19 오후 5:15:00,chsjudy@ewhain.net,18,"<대략의 개발환경 구성요소>
+
+1. client 디바이스
+- 전시 기획자용: PC 웹 (Windows)
+- 관람객용: 모바일 웹 (Android)
+
+2. FE: React + TypeScript
+
+3. BE: FastAPI
+
+4. DB: PostgreSQL
+
+5. FE또는 BE에 사용하는 특별한 라이브러리
+- Axios
+- Howler.js
+- Pillow(이미지 전처리)
+
+6. API Call로 사용할 서비스
+- OpenAI
+- Google Cloud TTS","* FE: React + TypeScript
+https://nodejs.org/en
+https://react.dev/learn
+https://www.typescriptlang.org/
+
+* BE: FastAPI
+https://fastapi.tiangolo.com/
+
+* DB: PostgreSQL
+https://www.postgresql.org/
+
+* FE또는 BE에 사용하는 특별한 라이브러리
+- Axios
+https://axios-http.com/
+
+- Howler.js
+https://howlerjs.com/
+
+- Pillow(이미지 전처리)
+https://pillow.readthedocs.io/
+
+* API Call로 사용할 서비스
+- OpenAI
+https://platform.openai.com/
+
+- Google Cloud TTS
+https://cloud.google.com/text-to-speech"
+2026. 3. 20 오전 12:45:57,handsson@ewhain.net,19,"Device : PC(Window)
+FE
+- Next.js
+- Typescript
+- Vite
+- yarn
+- Axios
+- Tailwindcss v4.2
+- StoryBook
+- Zustand
+- Tanstack Query
+- React Hook form + Zod
+- shadcn/ui (ui  컴포넌트)
+- ECharts
+- Monaco Editor(필요시)
+- Vercel or Jenkins
+
+BE
+- Java 21, Spring Boot 3
+- Spring AOP
+- PostgreSQL
+- AWS RDS
+- AWS S3
+- Redis
+- Flyway
+- Github Actions
+- Docker
+- Kubernetes
+- AWS ec2, Route53, ALB
+- AWS CloudWatch
+- Sentry
+- Slf4j, Logback
+- Spring Security
+- OAuth2.0
+- JWT
+- Swagger
+- k6, p6spy
+
+AI
+- Python
+- FastAPI
+- Pydantic v2
+- pandas
+- sentence-transformers
+- OpenAI API
+- Uvicorn
+- pytest
+- Render
+- GitHub Actions","1. FE
+[Next.js by Vercel - The React Framework](https://nextjs.org/)
+[Enable JavaScript to use search](https://www.google.com/search?q=vite&oq=vite&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYOzIGCAQQRRg9MgYIBRBFGEEyBggGEEUYQTIGCAcQRRhB0gEIMTAwN2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
+[Home page | Yarn](https://yarnpkg.com/)
+[시작하기 | Axios Docs](https://axios-http.com/kr/docs/intro)
+[Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.](https://tailwindcss.com/)
+[Storybook: Frontend workshop for UI development](https://storybook.js.org/)
+[Zustand](https://zustand-demo.pmnd.rs/)
+[TanStack Query](https://tanstack.com/query/latest)
+[Vercel: Build and deploy the best web experiences with the Frontend Cloud](https://vercel.com/)
+[Jenkins](https://www.jenkins.io/)
+
+2. BE
+https://spring.io/projects/spring-boot
+https://www.postgresql.org/download/
+https://redis.io/download/
+https://flywaydb.org/download
+https://docs.docker.com/get-docker/
+https://kubernetes.io/docs/tasks/tools/
+https://aws.amazon.com/cli/
+https://docs.sentry.io/product/sentry-basics/integrate-backend/
+http://www.slf4j.org/download.html
+https://logback.qos.ch/download.html
+https://spring.io/projects/spring-security
+https://swagger.io/tools/swagger-ui/download/
+https://grafana.com/docs/k6/latest/set-up/install-k6/
+https://github.com/p6spy/p6spy
+
+3. AI
+https://www.python.org/downloads/
+https://fastapi.tiangolo.com/
+https://docs.pydantic.dev/latest/
+https://pandas.pydata.org/docs/
+https://www.sbert.net/
+https://platform.openai.com/docs/api-reference
+https://www.uvicorn.org/
+https://docs.pytest.org/
+https://render.com/
+https://docs.github.com/actions"
