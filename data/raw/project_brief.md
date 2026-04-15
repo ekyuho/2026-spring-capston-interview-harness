@@ -14,8 +14,8 @@
 | [11](#team-11) | 알고리듬 | 산학 |  SpeedSchedule: 인력 운영 최적화를 위한 AI 스케줄링 및 시간표 관리 웹 플랫폼 |
 | [12](#team-12) | 404 | 산학 | 여성 1인 여행자를 위한 DB 기반 가이드맵 및 안전 동행 매칭 서비스 |
 | [13](#team-13) | Semicolone; | 산학 | AI 질문을 ‘기억되는 인사이트’로 바꿔주는 개인 지식 관리 플랫폼 |
-| [14](#team-14) | def | 연구 | 로컬 환경에서의 Agentic AI 병목 분석 및 성능 최적화: Apple silicon 온디바이스를 중심으로 |
-| [15](#team-15) | 햄부기 | 연구 | 엣지 환경 배포를 위한 Vision Transformer 구조적 가지치기 및 경량화 파이프라인 구축과 성능 분석 |
+| [14](#team-14) | def | 연구 | 로컬 LLM 기반 Coding Agent에서 Frequently Accessed Code 블록의 KV Cache 재사용을 통한 Token 소비 최적화 |
+| [15](#team-15) | 햄부기 | 연구 | 엣지 디바이스 배포를 위한 Vision Foundation Model의 2:4 구조적 희소성 성능 분석 및 추론 파이프라인 구축 |
 | [16](#team-16) | 퓨터 | 산학| 성향 변화형 AI 캐릭터 기반 영어 회화 학습 서비스 |
 | [17](#team-17) | SPY | 산학 | Moni: AI 기반 소비 예측과 맞춤형 챌린지를 결합한 개인화 소비 코칭 서비스 |
 | [18](#team-18) | 디바트(deep-art) | 연구 | 멀티모달 AI 기반 배리어프리 오디오 도슨트 자동 생성 서비스 |
@@ -62,14 +62,14 @@
 | 팀지도교수 | 황의원 교수님 |
 | 무엇을 만들고자 하는가 | 만성질환(고혈압·당뇨·이상지질혈증) 위험군을 대상으로, 식단 사진 한 장으로 영양소를 자동 분석하고 개인 건강 이력 기반의 AI 코칭을 제공하는 통합 헬스케어 모바일 플랫폼 On-Care. 식단 인식, 운동 코칭, AI 챗봇 상담, 헬스장 검색·예약, 건강 일정 관리, 포인트 보상을 하나의 앱에서 제공한다. |
 | 고객 (누구를 위해) | -**1차 타겟**: 고혈압·당뇨·이상지질혈증 등 만성질환 위험군에 해당하는 2030세대. 건강 관리의 필요성은 인식하지만 복잡한 기록·관리 방식에 진입 장벽을 느끼는 사용자.<br> -**2차 타겟**: 담당 트레이너와 연동해 고객 데이터를 효율적으로 파악하고자 하는 헬스 트레이너 및 헬스장 운영자. |
-| Pain Point (해결할 문제) | **① 파편화된 건강 관리**: 식단, 운동, 병원 일정을 별도 앱에서 따로 관리해야 해 지속성이 낮음<br> **② 식단 기록의 높은 진입 장벽**: 기존 앱은 텍스트 수동 입력·바코드 스캔에 의존해 번거롭고 기록 이탈률이 높음<br> **③ 획일적 AI 조언**: 개인 건강 이력·식단 로그·질환 정보를 반영하지 못하는 일반적 정보만 제공<br> **④ 트레이너 연동 부재**: 이용자의 건강 데이터를 트레이너에게 전달하는 인앱 채널이 없어 맞춤 지도가 어려움<br> **⑤ 동기부여 지속성 부족**: 단기 목표 달성 후 앱 이탈이 빈번하고 장기 습관 형성을 유도하는 보상 메커니즘이 없음 |
+| Pain Point (해결할 문제) | **① 파편화된 건강 관리**: 식단·운동·병원 일정을 별도 앱에서 관리해야 해 데이터 연속성이 낮고 지속 사용률이 떨어짐. 앱 전환 비용이 기록 이탈을 가속.<br> **② 식단 기록의 높은 진입 장벽**: 기존 앱은 텍스트 수동 입력·바코드 스캔에 의존해 기록 이탈률이 높음. 사진 1장으로 즉시 분석되는 UX가 없어 초기 습관 형성에 실패.<br> **③ 획일적 AI 조언**: 개인 건강 이력·식단 로그·질환 정보를 반영하지 못하는 일반적 정보만 제공. '나를 아는 AI'가 아니라 '검색 결과 요약' 수준에 그침.<br> **④ 트레이너 연동 부재**: 이용자의 건강 데이터가 트레이너에게 전달되는 인앱 채널이 없어 대면 상담 시 수기 보고에 의존. 맞춤 지도의 질이 낮아지고 신뢰도가 하락.<br> **⑤ 동기부여 지속성 부족**: 단기 목표 달성 후 앱 이탈이 빈번. 장기 습관 형성을 유도하는 보상 메커니즘(포인트·Streak)이 없어 DAU 유지에 실패. |
 | 사용 기술 | **AI/ML**: YOLOv8 (음식 이미지 1차 필터링으로 불필요한 API 호출 차단), Gemini Vision API (음식 종류·섭취량·영양소 세부 분석), GPT-4o (RAG 파이프라인 최종 답변 생성), LangChain (RAG 오케스트레이션), Pinecone (사용자 건강 이력 Vector DB), text-embedding-3-small (질문 임베딩)<br> **모바일**: Flutter 3.x (iOS/Android 크로스플랫폼), Riverpod (상태 관리), Dart<br> **백엔드**: FastAPI (REST API 서버), MySQL on AWS RDS (사용자·식단·운동·포인트 데이터), JWT 인증<br> **인프라**: Docker (컨테이너화), AWS EC2 (서버 배포), GitHub Actions (CI/CD 자동화), FCM (실시간 푸시 알림)<br> **외부 API**: 카카오맵 API (위치 기반 헬스장 검색), 공공데이터포털 식품영양성분 DB (칼로리·탄수화물·단백질·지방·나트륨 매핑) |
 | 개발환경 | **OS**: macOS / Linux (Docker 기반 통일 환경)<br> **모바일 개발**: Flutter 3.x, Dart SDK, Android Studio / VS Code<br> **백엔드 개발**: Python 3.11+, FastAPI, SQLAlchemy, Uvicorn<br> **AI 모델 서빙**: PyTorch (YOLOv8 inference), Ultralytics 라이브러리<br> **클라우드**: AWS EC2 (백엔드 서버), AWS RDS MySQL (데이터베이스)<br> **컨테이너**: Docker, Docker Compose<br> **버전 관리 및 협업**: Git / GitHub, GitHub Actions (CI/CD), GitHub Projects (태스크 관리) |
 | 사용하는 소프트웨어 URL | -Flutter: https://flutter.dev<br> -FastAPI: https://fastapi.tiangolo.com<br> -YOLOv8 (Ultralytics): https://github.com/ultralytics/ultralytics<br> -Google Gemini API: https://ai.google.dev<br> -OpenAI GPT-4o: https://openai.com<br> -LangChain: https://www.langchain.com<br> -Pinecone: https://www.pinecone.io<br> -Firebase FCM: https://firebase.google.com<br> -카카오맵 API: https://apis.map.kakao.com<br> -공공데이터포털 식품영양성분 DB: https://www.data.go.kr<br> -AWS (EC2 · RDS): https://aws.amazon.com<br> -Docker: https://www.docker.com |
-| 기대 효과 | **① 식단 기록 자동화**: 사진 1장으로 칼로리·영양소 자동 분석, 기록 부담을 획기적으로 줄여 지속적 식단 관리 가능<br> **② 개인 맞춤 AI 코칭 실현**: RAG 파이프라인으로 인바디·식단 로그·운동 이력·질환 정보를 LLM에 주입, '내 데이터를 아는 AI 코치'로 일반 앱과 차별화<br> **③ 건강 관리 통합화**: 식단·운동·헬스장·병원 일정을 단일 플랫폼에서 관리해 앱 전환 비용 제거 및 데이터 연속성 확보<br> **④ 트레이너-이용자 연결**: AI가 이용자 데이터를 자동 요약해 트레이너에게 전달, 전문 지도의 질과 효율 향상<br> **⑤ 만성질환 예방 기여**: 2030세대의 조기 식습관·운동 습관 개선을 통해 고혈압·당뇨·이상지질혈증 발병 위험 감소에 기여<br> **⑥ 장기 지속성 확보**: 포인트·Streak 보상 시스템으로 사용자의 내재적 동기를 강화하고 장기적 건강 습관 형성 유도 |
+| 기대 효과 | **① 식단 기록 자동화**: 사진 1장으로 칼로리·영양소 즉시 분석. 기록 부담을 최소화해 일일 식단 기록 유지율을 높임.<br> **② 개인 맞춤 AI 코칭**: RAG 파이프라인으로 인바디·식단 로그·운동 이력·질환 정보를 LLM에 주입. 일반 앱 대비 구체적이고 실질적인 조언 제공.<br> **③ 건강 관리 통합화**: 식단·운동·헬스장·병원 일정을 단일 플랫폼에서 관리. 앱 전환 비용 제거 및 데이터 연속성 확보.<br> **④ 트레이너-이용자 연결**: AI가 이용자 데이터를 자동 요약해 트레이너에게 전달. 전문 지도의 질·효율 향상 및 상담 준비 시간 단축.<br> **⑤ 만성질환 예방 기여**: 2030세대의 조기 식습관·운동 습관 개선을 통해 고혈압·당뇨·이상지질혈증 발병 위험 감소에 기여.<br> **⑥ 장기 지속성 확보**: 포인트·Streak 보상 시스템으로 내재적 동기를 강화하고 단기 이탈을 방지. 장기적 건강 습관 형성 유도. |
 | GitHub Repo | [https://github.com/CSE-Sudo-26/sudo-capstone-project](https://github.com/CSE-Sudo-26/sudo-capstone-project) |
 | Team Ground Rule | [Team Ground Rule](https://github.com/CSE-Sudo-26/sudo-capstone-project/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 2026-04-13 |
+| 최종수정일 | 2026-04-15 |
 
 [↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
 
@@ -293,17 +293,17 @@
 | 트랙 | 산학 |
 | 팀명 | 404 |
 | 팀구성 | 이아림, 노유나, 이채원  |
-| 팀지도교수 |  |
-| 무엇을 만들고자 하는가 | 여성 혼자 여행하는 사람들을 위한 안전 중심 여행 플랫폼을 개발하고자 한다. 여성 사용자들이 직접 작성한 안전 리뷰 데이터를 기반으로 여행지의 안전도를 지도에 표시하고, 이를 활용해 안전한 여행 경로와 맛집 및 관광 코스를 추천한다. 또한 같은 지역을 여행하는 여성들 간 동행 매칭 기능을 제공하여 안전하고 편안한 여행 환경을 만드는 것을 목표로 한다. |
+| 팀지도교수 | 오유란 |
+| 무엇을 만들고자 하는가 | 여성 혼자 여행하는 사람들을 위한 안전 중심 여행 플랫폼을 개발하고자 한다. 여성 사용자들이 직접 작성한 안전 리뷰 데이터를 기반으로 여행지의 안전도를 지도에 표시하고, 이를 활용해 안전한 여행 경로를 추천한다. 또한 같은 지역을 여행하는 여성들 간 동행 매칭 기능을 제공하여 안전하고 편안한 여행 환경을 만드는 것을 목표로 한다. |
 | 고객 (누구를 위해) | 20대 초반 여성교환 학생, 사회초년생 여성 직장인(20대 중후반) |
 | Pain Point (해결할 문제) | 여성의 안전 정보 부족과 혼자 여행할 때의 불안감 |
-| 사용 기술 | [AI] OpenAI API <br> [Frontend] React, Google Maps Platform, HTML / CSS / JavaScript <br> [Backend] Node.js, Express.js<br> [Database] MySQL |
+| 사용 기술 | [AI] OpenAI API <br> [Frontend] React, Google Cloud Console, HTML / CSS / JavaScript <br> [Backend] FastAPI<br> [Database] MySQL |
 | 개발환경 | 1. Client 디바이스는 Windows를 기반으로 한 PC로 한다.<br>2. FE는  React를 사용한다.<br>3. BE는 FastAPI를 기반으로 구현한다.<br>4. DB는 MySQL를 사용한다.<br>5. FE또는 BE에 사용하는 특별한 라이브러리는 Google Maps JavaScript API를 활용하여 지도 기반 기능을 구현한다.<br>6. API Call을 위해 OpenAI 서비스를 사용한다.
 | 사용하는 소프트웨어 URL | 1. Client 디바이스는 Windows를 기반으로 한 PC로 한다.<br>2. FE는  React를 사용한다.<br>3. BE는 FastAPI를 기반으로 구현한다.<br>4. DB는 MySQL를 사용한다.<br>5. FE또는 BE에 사용하는 특별한 라이브러리는 Google Maps JavaScript API를 활용하여 지도 기반 기능을 구현한다.<br>6. API Call을 위해 OpenAI 서비스를 사용한다.
 | 기대 효과 | 여성 1인 여행자가 안전하고 효율적으로 여행을 계획할 수 있고, 여성의 이동권과 안전권을 기술적으로 보장한다. |
-| GitHub Repo | [https://github.com/capstone-team404](https://github.com/capstone-team404) |
+| GitHub Repo | https://github.com/capstone-team404/Spring404 |
 | Team Ground Rule | (https://github.com/capstone-team404/Spring404/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 26.03.16 |
+| 최종수정일 | 26.04.15 |
 
 [↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
 
@@ -334,31 +334,25 @@
 
 ---
 
-
-
 <a id="team-14"></a>
 ## Team 14 def
 
 | 항목 | 내용 |
 |------|------|
-| 프로젝트명 | 로컬 환경에서의 Agentic AI 병목 분석 및 성능 최적화: Apple silicon 온디바이스를 중심으로 |
+| 프로젝트명 | 로컬 LLM 기반 Coding Agent에서 Frequently Accessed Code 블록의 KV Cache 재사용을 통한 Token 소비 최적화 |
 | 서비스명(브랜드) | |
 | 트랙 | 연구 |
 | 팀명 | def |
 | 팀구성 | 서혜원, 신은서, 이재린 |
 | 팀지도교수 | 심재형 교수님 |
-| 무엇을 만들고자 하는가 | - 로컬 워크로드를 분석하고 병목을 스스로 해결하는 에이전트 기반 최적화 프레임워크 설계 및 구현<br>- Experimental Evaluation (논문 핵심): 최적화 적용 전/후의 성능(TPS, Latency, Energy Efficiency) 비교 데이터와 다양한 워크로드 시나리오(단일 추론 vs 멀티태스킹)에서의 자원 효율성 검증 보고서 |
-| 고객 (누구를 위해) | - Agent AI 시스템 설계자 및 연구자: 클라우드 의존도를 낮추고 로컬 기기(Edge Device)의 하드웨어 잠재력을 끝까지 끌어올려야 하는 엔지니어<br>- Agent AI 사용자: 외부 클라우드 서버에 데이터를 보내지 않고, Mac mini 같은 로컬 기기에서 개인화된 AI 모델을 안전하게 돌리고 싶은 개인 및 기업 |
-| Pain Point (해결할 문제) | - 리소스 고갈:LLM(거대언어모델) 실행 시 메모리 점유율이 급증하여 시스템이 멈추거나 느려지는 현상<br>- 예측 불가능한 병목(Dynamic Bottleneck):워크로드의 성격(연산 중심 vs 메모리 중심)에 따라 시스템의 어느 부분에서 병목이 생길지 실시간으로 파악하기 어려움<br>- 메모리 고갈(Memory Issue):특히 LLM 구동 시 제한된 통합 메모리(Unified Memory) 용량을 초과할 때 생기는 다양한 문제점 |
-| 사용 기술 | - Agentic Monitoring Loop : 에이전트가 시스템 API를 통해 CPU/GPU 등 점유율 및 전력 소모량을 실시간 관찰하고 대응 전략을 결정<br>- 현재 실행 중인 워크로드에 대한 실시간으로 분류하는 분석 알고리즘 |
-| 개발환경 | 1. Client 디바이스<br><br>- PC (macOS): 연구 대상이 Mac mini이므로 실험과 구동 모두 Mac 환경에서 진행<br><br>2. FE <br><br>- Streamlit : 파이썬 기반으로 대시보드를 빠르게 만들 수 있어, 실시간 자원 사용량 그래프(CPU, GPU, RAM)를 시각화<br><br>3. 특별한 라이브러리<br><br>- MLX : Apple Silicon GPU/NPU를 최대한 활용하기 위한 애플의 공식 딥러닝 프레임워크<br><br>- LangChain : Agent의 의사결정 루프를 설계<br><br>6. API Call 서비스<br>- 해당 없음<br>- Local LLM (Llama 3, Ollama)의 활용. 외부 API(OpenAI 등)를 쓰면 '로컬 워크로드 최적화'라는 연구 취지에 어긋남. 로컬에 모델을 띄우고 호출함.
-| 사용하는 소프트웨어 URL | 1. Client 디바이스<br><br>- PC (macOS): 연구 대상이 Mac mini이므로 실험과 구동 모두 Mac 환경에서 진행<br><br>2. FE <br><br>- Streamlit : 파이썬 기반으로 대시보드를 빠르게 만들 수 있어, 실시간 자원 사용량 그래프(CPU, GPU, RAM)를 시각화<br><br>3. 특별한 라이브러리<br><br>- MLX : Apple Silicon GPU/NPU를 최대한 활용하기 위한 애플의 공식 딥러닝 프레임워크<br><br>- LangChain : Agent의 의사결정 루프를 설계<br><br>6. API Call 서비스<br>- 해당 없음<br>- Local LLM (Llama 3, Ollama)의 활용. 외부 API(OpenAI 등)를 쓰면 '로컬 워크로드 최적화'라는 연구 취지에 어긋남. 로컬에 모델을 띄우고 호출함.
-| 기대 효과 | - 효율성 극대화:동일 하드웨어 대비 AI 추론 성능(Throughput) 및 응답 속도(Latency)의 유의미한 향상.<br>- 시스템 안정성:메모리 이슈로 인한 시스템 다운 방지 및 멀티태스킹 환경에서의 부드러운 사용자 경험 유지.<br>- 에너지 효율: 불필요한 연산 낭비를 줄여 전력 소모 최적화 및 발열 제어 |
+| 무엇을 만들고자 하는가 | 코딩 에이전트가 레포지토리를 탐색하는 과정에서 반복적으로 읽히는 코드 블록을 추적하고, 해당 블록의 KV Cache를 context 내 위치에 무관하게 메모리에 상주시켜 재사용함으로써 prefill 비용을 줄이는 최적화 레이어를 vLLM 기반 로컬 환경에 구현한다.<br>- 코드 블록별 read frequency 프로파일러<br>- Hot block 판별 및 KV Cache pinning 정책<br>- 로컬 LLM 추론 파이프라인과의 통합<br>|
+| 고객 (누구를 위해) | - 로컬 LLM으로 코딩 에이전트를 운용하는 개인 개발자 / 연구자<br> - API 비용 대신 온디바이스 추론을 선택한 팀 (스타트업, 보안 민감 조직)<br> - NVIDIA GPU 기반 자체 인프라 운용 조직<br>|
+| Pain Point (해결할 문제) | - 코딩 에이전트의 토큰 소비에서 input token이 압도적으로 지배적이며, 토큰 캐싱을 적용해도 그 구조는 유지된다. 핵심 원인은 코드 탐색 패턴에 있다.<br>- SWE-Agent를 포함한 코딩 에이전트는 파일 접근 시 전체 파일 내용을 읽는 whole-file reading 방식을 채택하는데, 매 스텝마다 대화 히스토리가 누적되면서 같은 파일을 반복 읽어도 prefix가 달라져 기존 prefix caching이 무력화된다.<br>->에이전트가 같은 파일을 반복 탐색할 때마다 full prefill이 재발생하고, 로컬 환경에서는 이것이 직접적인 지연 시간 + VRAM 대역폭 낭비로 이어짐 |
+| 사용 기술 | - 에이전트 프레임워크 : SWE-Agent<br> - 추론 런타임 : vLLM<br>- 타겟 하드웨어 : NVDIA RTX 5090X2(VRAM 31.84GBX2, Linux)<br>- 프로파일링 : nvida-smi, nvml, vLLM metrics endpoint<br>- KV Cache 제어 : vLLM block manager 커스터마이징+위치에 종속되지 않는 pinning 정책<br>|
+| 기대 효과 | - Prefill latency 감소 : 자주 읽히는 코드 블록의 KV Cache를 재계산 없이 재사용<br>- VRAM 대역폭 절약 — RTX 5090 듀얼 환경에서 중복 prefill로 인한 메모리 낭비 제거<br>- 총 토큰 소비 감소 : 반복 read에서 발생하는 input token 중복 제거<br> -Long context 환경 대응 : 히스토리가 누적되어도 캐시 hit 유지<br>|
 | GitHub Repo | [https://github.com/capstone-2026-ewha/def](https://github.com/capstone-2026-ewha/def) |
 | Team Ground Rule | [https://github.com/capstone-2026-ewha/def/blob/main/Team_Ground_Rule.md](https://github.com/capstone-2026-ewha/def/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 2026-3-12 |
-
-[↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
+| 최종수정일 | 2026-4-15 |
 
 ---
 
@@ -367,22 +361,22 @@
 
 | 항목 | 내용 |
 |------|------|
-| 프로젝트명 | 엣지 환경 배포를 위한 Vision Transformer 구조적 가지치기 및 경량화 파이프라인 구축과 성능 분석 |
+| 프로젝트명 | 엣지 디바이스 배포를 위한 Vision Foundation Model의 2:4 구조적 희소성 성능 분석 및 추론 파이프라인 구축 |
 | 서비스명(브랜드) | |
 | 트랙 | 연구 |
 | 팀명 | 햄부기 |
 | 팀구성 | 신성현, 송영채, 장수연 |
-| 팀지도교수 | 심재형 |
-| 무엇을 만들고자 하는가 | 엣지 장치와 클라우드 서버가 협력하여 이미지를 빠르게 분석하는 분산 AI 추론 시스템 |
-| 고객 (누구를 위해) | AI 기반 서비스를 개발하는 학생 팀 및 연구 프로젝트 수행자를 위해 |
-| Pain Point (해결할 문제) | 엣지 장치에서 AI 모델을 실행할 때 발생하는 높은 연산 부담과 네트워크 지연 문제를 해결하기 위해 |
-| 사용 기술 | Computer Vision 모델과 Edge–Cloud Split Inference 기술을 사용하여 일부 연산은 엣지에서, 나머지는 클라우드에서 처리하는 방식 사용 |
-| 개발환경 | 1. Client 디바이스 — PC (Windows) + Jetson AGX Orin (엣지 디바이스)<br>2. FE — 없음<br>3. BE — 없음<br>4. DB — 없음 (실험 결과는 TensorBoard로 시각화)<br>5. 특별한 라이브러리<br>- PyTorch (모델 학습 및 가지치기)<br>- Hugging Face Transformers (ViT 모델 로드)<br>- torch.ao (2:4 Sparsity 적용)<br>- TensorRT (Jetson 추론 최적화)<br>- ONNX (모델 변환)<br>- TensorBoard (실험 결과 시각화)<br>6. API Call 서비스 — 없음
-| 사용하는 소프트웨어 URL | 1. Client 디바이스 — PC (Windows) + Jetson AGX Orin (엣지 디바이스)<br>2. FE — 없음<br>3. BE — 없음<br>4. DB — 없음 (실험 결과는 TensorBoard로 시각화)<br>5. 특별한 라이브러리<br>- PyTorch (모델 학습 및 가지치기)<br>- Hugging Face Transformers (ViT 모델 로드)<br>- torch.ao (2:4 Sparsity 적용)<br>- TensorRT (Jetson 추론 최적화)<br>- ONNX (모델 변환)<br>- TensorBoard (실험 결과 시각화)<br>6. API Call 서비스 — 없음
-| 기대 효과 | AI 추론 속도를 개선하고 네트워크 사용량을 줄이며, 제한된 연산 자원을 가진 장치에서도 효율적인 AI 서비스가 가능해진다 |
+| 팀지도교수 | 심재형 교수님 |
+| 무엇을 만들고자 하는가 | NVIDIA Ampere 및 차세대 아키텍처에서 지원하는 2:4 Structured Sparsity 기법을 VFM에 적용하여 엣지 디바이스에서의 추론 성능을 극대화하는 파이프라인 구축 |
+| 고객 (누구를 위해) | Edge AI 기반 서비스를 개발하는 학생 팀 및 연구 프로젝트 수행자를 위해 |
+| Pain Point (해결할 문제) | 최근 Vision Foundation Model(VFM)은 강력한 성능을 보여주지만, 엣지 환경에 배포하기에는 다음과 같은 치명적인 한계가 있다.<br><br>- **VFM의 높은 연산 비용**: ViT 기반 모델은 파라미터 수가 방대하여 엣지 GPU에서도 실시간 추론이 어렵다.<br>- **메모리 대역폭 병목**: 대규모 가중치를 메모리에서 불러오는 과정에서 에너지가 소모되고 지연 시간이 발생한다.<br>- **하드웨어 최적화 미비**: 일반적인 Unstructured Sparsity(무작위 희소화)는 가중치를 줄여도 실제 하드웨어(GPU)에서 연산 가속으로 이어지지 않는 경우가 많다.<br><br>따라서 엣지 디바이스(NVIDIA Jetson AGX Orin 등)의 Sparse Tensor Core를 활용하여, 하드웨어 수준에서 성능을 끌어올릴 수 있는 구조적 최적화가 필요하다. |
+| 사용 기술 | **모델 최적화 및 학습**<br>- 2:4 Structured Sparsity: 연속된 4개의 가중치 중 2개를 0으로 제한하는 구조적 희소화 기법으로, Sparse Tensor Core에서 0이 아닌 값만 선택적으로 연산하여 이론적으로 최대 2배의 처리량 향상을 달성할 수 있다.<br>- VFM Fine-tuning: DINOv2나 CLIP 같은 모델에 Sparse-refined 학습을 적용하여 정확도 손실을 최소화한다.<br><br>**추론 최적화**<br>- TensorRT 가속: 2:4 패턴을 인식하는 TensorRT 엔진을 빌드하여 Orin 디바이스에 최적화된 실행 파일을 생성한다.<br><br>**시스템 파이프라인**<br>- End-to-End 파이프라인: 이미지 입력부터 Sparse 연산을 거친 최종 추론까지의 전 과정을 자동화한다. |
+| 개발환경 | 1. Client 디바이스 — PC (Windows) + Jetson AGX Orin (엣지 디바이스)<br>2. FE — 없음<br>3. BE — 없음<br>4. DB — 없음 (실험 결과는 TensorBoard로 시각화)<br>5. 특별한 라이브러리<br>- PyTorch (모델 학습 및 가지치기)<br>- torch.ao (2:4 Sparsity 적용)<br>- TensorRT (Jetson 추론 최적화)<br>- ONNX (모델 변환)<br>- TensorBoard (실험 결과 시각화)<br>6. API Call 서비스 — 없음 |
+| 사용하는 소프트웨어 URL | - PyTorch(https://pytorch.org/)<br>- TensorRT(https://developer.nvidia.com/tensorrt)<br>- ONNX(https://onnx.ai/)<br>- NVIDIA Developer(https://developer.nvidia.com/) |
+| 기대 효과 | 본 프로젝트를 통해 Vision Foundation Model을 엣지 환경에서도 실시간으로 활용할 수 있는 기반을 마련할 수 있으며, 기존 Dense 모델 대비 연산 속도와 처리량이 크게 개선된다. 특히 2:4 Structured Sparsity와 Sparse Tensor Core를 활용함으로써 단순한 모델 경량화를 넘어 실제 하드웨어 수준에서의 성능 향상을 달성할 수 있다. 또한 pruning 이후 fine-tuning 전략을 통해 정확도 손실을 최소화함으로써, 경량화와 성능 사이의 trade-off 문제를 효과적으로 해결할 수 있다. 결과적으로 본 파이프라인은 다양한 비전 및 멀티모달 모델에 재사용 가능하며, VFM을 실제 산업 현장에 적용 가능한 수준으로 끌어내리는 데 기여할 수 있다. |
 | GitHub Repo | [https://github.com/Ewha-Capstone-Project/Hambugy.git](https://github.com/Ewha-Capstone-Project/Hambugy.git) |
 | Team Ground Rule | [https://github.com/Ewha-Capstone-Project/Hambugy/blob/main/Team_Ground_Rule.md](https://github.com/Ewha-Capstone-Project/Hambugy/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 26/03/14 |
+| 최종수정일 | 26/04/15 |
 
 [↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
 
