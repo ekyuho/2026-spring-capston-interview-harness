@@ -31,9 +31,10 @@ data/output/debug_columns.md
 ## 2차 목표
 
 컬럼명을 확인한 뒤, 팀번호와 학생 이름 기준으로 병합 규칙을 확정합니다.
+```
 python .\scripts\generate_team_dossiers.py
 예상 출력:
-
+```
 ```text
 data/output/team-01.md
 data/output/team-02.md
