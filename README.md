@@ -33,9 +33,9 @@ data/output/debug_columns.md
 컬럼명을 확인한 뒤, 팀번호와 학생 이름 기준으로 병합 규칙을 확정합니다.
 ```
 python .\scripts\generate_team_dossiers.py
+Get-ChildItem -Path . -Filter desktop.ini -Recurse -Force | Remove-Item -Force
+
 예상 출력:
-```
-```text
 data/output/team-01.md
 data/output/team-02.md
 ...
